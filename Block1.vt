@@ -1,0 +1,129 @@
+// Copyright (C) 1991-2013 Altera Corporation
+// Your use of Altera Corporation's design tools, logic functions 
+// and other software and tools, and its AMPP partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Altera Program License 
+// Subscription Agreement, Altera MegaCore Function License 
+// Agreement, or other applicable license agreement, including, 
+// without limitation, that your use is for the sole purpose of 
+// programming logic devices manufactured by Altera and sold by 
+// Altera or its authorized distributors.  Please refer to the 
+// applicable agreement for further details.
+
+// *****************************************************************************
+// This file contains a Verilog test bench template that is freely editable to  
+// suit user's needs .Comments are provided in each section to help the user    
+// fill out necessary details.                                                  
+// *****************************************************************************
+// Generated on "12/16/2017 18:39:50"
+                                                                                
+// Verilog Test Bench template for design : Block1
+// 
+// Simulation tool : ModelSim-Altera (Verilog)
+// 
+
+`timescale 1 ps/ 1 ps
+module Block1_vlg_tst();
+// constants                                           
+// general purpose registers
+reg eachvec;
+// test vector input registers
+reg treg_dm_inout;
+reg treg_dp_inout;
+reg inclk;
+reg RX_COM1;
+reg RX_COM2;
+// wires                                               
+wire d_out_enable;
+wire dm_inout;
+wire dp_inout;
+wire tx_clk;
+wire TX_COM1;
+wire TX_COM2;
+wire TX_COM_LED1;
+wire TX_COM_LED2;
+
+// assign statements (if any)                          
+assign dm_inout = treg_dm_inout;
+assign dp_inout = treg_dp_inout;
+Block1 i1 (
+// port map - connection between master ports and signals/registers   
+	.d_out_enable(d_out_enable),
+	.dm_inout(dm_inout),
+	.dp_inout(dp_inout),
+	.inclk(inclk),
+	.RX_COM1(RX_COM1),
+	.RX_COM2(RX_COM2),
+	.tx_clk(tx_clk),
+	.TX_COM1(TX_COM1),
+	.TX_COM2(TX_COM2),
+	.TX_COM_LED1(TX_COM_LED1),
+	.TX_COM_LED2(TX_COM_LED2)
+);
+
+always
+    #41.667 inclk = ~inclk;    
+	
+integer ones_cnt;	
+
+initial                                                
+begin                                                  
+// code that executes only once                        
+// insert code here --> begin    
+
+
+/*task ls_pause(input integer num_bits);
+ begin
+    repeat(8 * num_bits) @(posedge clk);
+    #0;
+ end
+endtask*/
+
+/*task send_ls_byte(input [7:0]sbyte);
+integer i;
+ begin
+   //в цикле передаем бит за битом (младшие вперед)
+   for(i=0; i<8; i=i+1)
+   begin
+    //в шине USB бит "0" кодируется сменой сигналов dp и dm на противоположные 
+    if(sbyte[i]==0)
+    begin
+        dp_inout = ~dp_inout;
+        dm_inout = ~dm_inout;
+        ones_cnt = 0;
+    end
+    else
+    begin
+        //запоминаем количество переданных подряд единиц
+        ones_cnt = ones_cnt+1;
+    end
+    ls_pause(1);
+
+    //если передано подряд 6 единиц, то искуственно вставляем бит "0" 
+    if(ones_cnt==6)
+    begin
+        dp_inout = ~dp_inout;
+        dm_inout = ~dm_inout;
+        ones_cnt = 0;
+        ls_pause(1);
+    end
+   end
+ end
+endtask    */                                                           
+// --> end                                             
+$display("Running testbench");                       
+end                                                    
+always                                                 
+// optional sensitivity list                           
+// @(event1 or event2 or .... eventn)                  
+begin                                                  
+// code executes for every event on sensitivity list   
+// insert code here --> begin                          
+                                                       
+@eachvec;                                              
+// --> end                                             
+end                                                    
+endmodule
+

@@ -1,0 +1,92 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+*/
+(header "symbol" (version "1.2"))
+(symbol
+	(rect 0 0 232 224)
+	(text "altiobuf_dif" (rect 87 0 160 16)(font "Arial" (font_size 10)))
+	(text "inst" (rect 8 208 25 220)(font "Arial" ))
+	(port
+		(pt 0 176)
+		(input)
+		(text "datain[0]" (rect 0 0 48 14)(font "Arial" (font_size 8)))
+		(text "datain[0]" (rect 4 162 43 175)(font "Arial" (font_size 8)))
+		(line (pt 0 176)(pt 100 176)(line_width 3))
+	)
+	(port
+		(pt 0 144)
+		(input)
+		(text "oe[0]" (rect 0 0 28 14)(font "Arial" (font_size 8)))
+		(text "oe[0]" (rect 4 130 26 143)(font "Arial" (font_size 8)))
+		(line (pt 0 144)(pt 105 144)(line_width 3))
+	)
+	(port
+		(pt 0 152)
+		(input)
+		(text "oe_b[0]" (rect 0 0 42 14)(font "Arial" (font_size 8)))
+		(text "oe_b[0]" (rect 20 145 54 158)(font "Arial" (font_size 8)))
+		(line (pt 0 152)(pt 16 152)(line_width 3))
+	)
+	(port
+		(pt 232 56)
+		(output)
+		(text "dataout[0]" (rect 0 0 56 14)(font "Arial" (font_size 8)))
+		(text "dataout[0]" (rect 181 42 227 55)(font "Arial" (font_size 8)))
+		(line (pt 232 56)(pt 80 56)(line_width 3))
+	)
+	(port
+		(pt 232 168)
+		(bidir)
+		(text "dataio[0]" (rect 0 0 48 14)(font "Arial" (font_size 8)))
+		(text "dataio[0]" (rect 188 154 227 167)(font "Arial" (font_size 8)))
+		(line (pt 232 168)(pt 117 168)(line_width 3))
+	)
+	(port
+		(pt 232 184)
+		(bidir)
+		(text "dataio_b[0]" (rect 0 0 62 14)(font "Arial" (font_size 8)))
+		(text "dataio_b[0]" (rect 176 170 227 183)(font "Arial" (font_size 8)))
+		(line (pt 232 184)(pt 118 184)(line_width 3))
+	)
+	(drawing
+		(text "+" (rect 124 63 255 141)(font "Arial" (font_size 10)))
+		(text "+" (rect 110 164 227 343)(font "Arial" (font_size 10)))
+		(text "-" (rect 111 172 224 359)(font "Arial" (font_size 10)))
+		(text "-" (rect 125 79 252 173)(font "Arial" (font_size 10)))
+		(text "differential mode" (rect 157 205 383 421)(font "Arial" ))
+		(line (pt 100 160)(pt 100 192))
+		(line (pt 100 160)(pt 132 176))
+		(line (pt 100 192)(pt 132 176))
+		(line (pt 156 168)(pt 156 72)(line_width 3))
+		(line (pt 132 72)(pt 156 72)(line_width 3))
+		(line (pt 146 184)(pt 146 88)(line_width 3))
+		(line (pt 132 88)(pt 146 88)(line_width 3))
+		(line (pt 105 144)(pt 105 161)(line_width 3))
+		(line (pt 132 64)(pt 132 96))
+		(line (pt 132 64)(pt 100 80))
+		(line (pt 132 96)(pt 100 80))
+		(line (pt 80 56)(pt 80 80)(line_width 3))
+		(line (pt 80 80)(pt 100 80)(line_width 3))
+		(line (pt 0 0)(pt 234 0))
+		(line (pt 234 0)(pt 234 226))
+		(line (pt 0 226)(pt 234 226))
+		(line (pt 0 0)(pt 0 226))
+	)
+)

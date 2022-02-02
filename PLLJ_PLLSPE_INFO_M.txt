@@ -1,0 +1,10 @@
+PLL_Name	altlvds_rx0:inst3|altlvds_rx:ALTLVDS_RX_component|altlvds_rx0_lvds_rx:auto_generated|lvds_rx_pll
+PLLJITTER	32
+PLLSPEmax	84
+PLLSPEmin	-53
+
+PLL_Name	altpll0:inst1|altpll:altpll_component|altpll_bie2:auto_generated|pll1
+PLLJITTER	16
+PLLSPEmax	84
+PLLSPEmin	-53
+

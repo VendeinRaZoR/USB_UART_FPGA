@@ -1,0 +1,121 @@
+<session jtag_chain="USB-Blaster [USB-0]" jtag_device="@1: EP3C10/5 (0x020F10DD)" sof_file="" top_level_entity="Block1">
+  <display_tree gui_logging_enabled="0">
+    <display_branch instance="auto_signaltap_0" signal_set="USE_GLOBAL_TEMP" trigger="USE_GLOBAL_TEMP"/>
+  </display_tree>
+  <global_info>
+    <single attribute="active instance" value="0"/>
+    <single attribute="lock mode" value="36110"/>
+    <multi attribute="window position" size="9" value="1024,674,398,124,356,50,124,0,51"/>
+  </global_info>
+  <instance entity_name="sld_signaltap" is_auto_node="yes" name="auto_signaltap_0" source_file="sld_signaltap.vhd">
+    <node_ip_info instance_id="0" mfg_id="110" node_id="0" version="6"/>
+    <position_info>
+      <single attribute="active tab" value="1"/>
+    </position_info>
+    <signal_set global_temp="1" name="signal_set: 2017/02/03 05:58:00  #0">
+      <clock name="ls_usb_recv:inst|clk" polarity="posedge" tap_mode="classic"/>
+      <config ram_type="M4K" reserved_data_nodes="0" reserved_storage_qualifier_nodes="0" reserved_trigger_nodes="0" sample_depth="128" trigger_in_enable="yes" trigger_in_pin="auto_stp_trigger_in_0" trigger_out_enable="no"/>
+      <top_entity/>
+      <signal_vec>
+        <trigger_input_vec>
+          <wire name="dm" tap_mode="classic" type="input pin"/>
+          <wire name="dp" tap_mode="classic" type="input pin"/>
+          <wire name="rdata[0]" tap_mode="classic" type="output pin"/>
+          <wire name="rdata[1]" tap_mode="classic" type="output pin"/>
+          <wire name="rdata[2]" tap_mode="classic" type="output pin"/>
+          <wire name="rdata[3]" tap_mode="classic" type="output pin"/>
+          <wire name="rdata[4]" tap_mode="classic" type="output pin"/>
+          <wire name="rdata[5]" tap_mode="classic" type="output pin"/>
+          <wire name="rdata[6]" tap_mode="classic" type="output pin"/>
+          <wire name="rdata[7]" tap_mode="classic" type="output pin"/>
+        </trigger_input_vec>
+        <data_input_vec>
+          <wire name="dm" tap_mode="classic" type="input pin"/>
+          <wire name="dp" tap_mode="classic" type="input pin"/>
+          <wire name="rdata[0]" tap_mode="classic" type="output pin"/>
+          <wire name="rdata[1]" tap_mode="classic" type="output pin"/>
+          <wire name="rdata[2]" tap_mode="classic" type="output pin"/>
+          <wire name="rdata[3]" tap_mode="classic" type="output pin"/>
+          <wire name="rdata[4]" tap_mode="classic" type="output pin"/>
+          <wire name="rdata[5]" tap_mode="classic" type="output pin"/>
+          <wire name="rdata[6]" tap_mode="classic" type="output pin"/>
+          <wire name="rdata[7]" tap_mode="classic" type="output pin"/>
+        </data_input_vec>
+        <storage_qualifier_input_vec>
+          <wire name="dm" tap_mode="classic" type="input pin"/>
+          <wire name="dp" tap_mode="classic" type="input pin"/>
+          <wire name="rdata[0]" tap_mode="classic" type="output pin"/>
+          <wire name="rdata[1]" tap_mode="classic" type="output pin"/>
+          <wire name="rdata[2]" tap_mode="classic" type="output pin"/>
+          <wire name="rdata[3]" tap_mode="classic" type="output pin"/>
+          <wire name="rdata[4]" tap_mode="classic" type="output pin"/>
+          <wire name="rdata[5]" tap_mode="classic" type="output pin"/>
+          <wire name="rdata[6]" tap_mode="classic" type="output pin"/>
+          <wire name="rdata[7]" tap_mode="classic" type="output pin"/>
+        </storage_qualifier_input_vec>
+      </signal_vec>
+      <presentation>
+        <data_view>
+          <net is_signal_inverted="no" name="dm"/>
+          <net is_signal_inverted="no" name="dp"/>
+          <bus is_signal_inverted="no" link="all" name="rdata" order="lsb_to_msb" radix="hex" state="collapse" type="output pin">
+            <net is_signal_inverted="no" name="rdata[0]"/>
+            <net is_signal_inverted="no" name="rdata[1]"/>
+            <net is_signal_inverted="no" name="rdata[2]"/>
+            <net is_signal_inverted="no" name="rdata[3]"/>
+            <net is_signal_inverted="no" name="rdata[4]"/>
+            <net is_signal_inverted="no" name="rdata[5]"/>
+            <net is_signal_inverted="no" name="rdata[6]"/>
+            <net is_signal_inverted="no" name="rdata[7]"/>
+          </bus>
+        </data_view>
+        <setup_view>
+          <net is_signal_inverted="no" name="dm"/>
+          <net is_signal_inverted="no" name="dp"/>
+          <bus is_signal_inverted="no" link="all" name="rdata" order="lsb_to_msb" radix="hex" state="collapse" type="output pin">
+            <net is_signal_inverted="no" name="rdata[0]"/>
+            <net is_signal_inverted="no" name="rdata[1]"/>
+            <net is_signal_inverted="no" name="rdata[2]"/>
+            <net is_signal_inverted="no" name="rdata[3]"/>
+            <net is_signal_inverted="no" name="rdata[4]"/>
+            <net is_signal_inverted="no" name="rdata[5]"/>
+            <net is_signal_inverted="no" name="rdata[6]"/>
+            <net is_signal_inverted="no" name="rdata[7]"/>
+          </bus>
+        </setup_view>
+      </presentation>
+      <trigger attribute_mem_mode="false" gap_record="true" global_temp="1" name="trigger: 2017/02/03 05:58:00  #1" position="pre" power_up_trigger_mode="false" record_data_gap="true" segment_size="1" storage_mode="off" storage_qualifier_disabled="no" storage_qualifier_port_is_pin="true" storage_qualifier_port_name="auto_stp_external_storage_qualifier" storage_qualifier_port_tap_mode="classic" trigger_in="rising edge" trigger_out="active high" trigger_type="circular">
+        <power_up_trigger position="pre" storage_qualifier_disabled="no" trigger_in="dont_care" trigger_out="active high"/>
+        <events use_custom_flow_control="no">
+          <level enabled="yes" name="condition1" type="basic">
+            <power_up enabled="yes">
+            </power_up>
+            <op_node/>
+          </level>
+        </events>
+        <storage_qualifier_events>
+          <transitional>0000000000
+            <pwr_up_transitional>0000000000
+            </pwr_up_transitional>
+          </transitional>
+          <storage_qualifier_level type="basic">
+            <power_up>
+            </power_up>
+            <op_node/>
+          </storage_qualifier_level>
+          <storage_qualifier_level type="basic">
+            <power_up>
+            </power_up>
+            <op_node/>
+          </storage_qualifier_level>
+          <storage_qualifier_level type="basic">
+            <power_up>
+            </power_up>
+            <op_node/>
+          </storage_qualifier_level>
+        </storage_qualifier_events>
+      </trigger>
+    </signal_set>
+  </instance>
+  <mnemonics/>
+</session>

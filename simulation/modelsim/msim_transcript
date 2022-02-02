@@ -1,0 +1,3420 @@
+# Reading C:/altera/13.0/modelsim_ase/tcl/vsim/pref.tcl 
+# do usbfunc_run_msim_rtl_verilog.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying C:\altera\13.0\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:\altera\13.0\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vlog -vlog01compat -work work +incdir+C:/altera_projects/usbfunc {C:/altera_projects/usbfunc/Block1.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Block1
+# 
+# Top level modules:
+# 	Block1
+# vlog -vlog01compat -work work +incdir+C:/altera_projects/usbfunc {C:/altera_projects/usbfunc/ls_usb_send.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module ls_usb_sender
+# 
+# Top level modules:
+# 	ls_usb_sender
+# vlog -vlog01compat -work work +incdir+C:/altera_projects/usbfunc {C:/altera_projects/usbfunc/ls_usb_recv.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module ls_usb_recv
+# ** Warning: C:/altera_projects/usbfunc/ls_usb_recv.v(125): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# 
+# Top level modules:
+# 	ls_usb_recv
+# vlog -vlog01compat -work work +incdir+C:/altera_projects/usbfunc {C:/altera_projects/usbfunc/ls_usb_core.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module ls_usb_core
+# ** Warning: C:/altera_projects/usbfunc/ls_usb_core.v(754): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# 
+# Top level modules:
+# 	ls_usb_core
+# vlog -vlog01compat -work work +incdir+C:/altera_projects/usbfunc/db {C:/altera_projects/usbfunc/db/altiobuf0.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module altiobuf0_iobuf_bidir_30p
+# -- Compiling module altiobuf0
+# 
+# Top level modules:
+# 	altiobuf0
+# vlog -vlog01compat -work work +incdir+C:/altera_projects/usbfunc {C:/altera_projects/usbfunc/uart_cntlr.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module uart_controller
+# 
+# Top level modules:
+# 	uart_controller
+# 
+# vlog -vlog01compat -work work +incdir+C:/altera_projects/usbfunc/simulation/modelsim {C:/altera_projects/usbfunc/simulation/modelsim/Block1.vt}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Block1_vlg_tst
+# 
+# Top level modules:
+# 	Block1_vlg_tst
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneiii_ver -L rtl_work -L work -voptargs="+acc"  block1
+# vsim -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneiii_ver -L rtl_work -L work -voptargs=\"+acc\" -t 1ps block1 
+# ** Error: (vsim-3170) Could not find 'work.block1'.
+# 
+# Error loading design
+# Error: Error loading design 
+#        Pausing macro execution 
+# MACRO ./usbfunc_run_msim_rtl_verilog.do PAUSED at line 17
+vsim -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneiii_ver -L rtl_work -L work -voptargs=\"+acc\" -t 10ns work.Block1_vlg_tst
+# vsim -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneiii_ver -L rtl_work -L work -voptargs=\"+acc\" -t 10ns work.Block1_vlg_tst 
+# Loading work.Block1_vlg_tst
+# Loading work.Block1
+# Loading work.ls_usb_recv
+# Loading work.altiobuf0
+# Loading work.altiobuf0_iobuf_bidir_30p
+# Loading cycloneiii_ver.cycloneiii_io_ibuf
+# Loading cycloneiii_ver.cycloneiii_io_obuf
+# Loading work.ls_usb_core
+# Loading work.uart_controller
+# Loading work.ls_usb_sender
+# ** Warning: (vsim-3017) C:/altera_projects/usbfunc/Block1.v(125): [TFMPC] - Too few port connections. Expected 17, found 16.
+# 
+#         Region: /Block1_vlg_tst/i1/b2v_inst2
+# ** Warning: (vsim-3722) C:/altera_projects/usbfunc/Block1.v(125): [TFMPC] - Missing connection for port 'SETUP_token'.
+# 
+# ** Warning: (vsim-3017) C:/altera_projects/usbfunc/Block1.v(177): [TFMPC] - Too few port connections. Expected 15, found 11.
+# 
+#         Region: /Block1_vlg_tst/i1/b2v_inst7
+# ** Warning: (vsim-3722) C:/altera_projects/usbfunc/Block1.v(177): [TFMPC] - Missing connection for port 'rdata'.
+# 
+# ** Warning: (vsim-3722) C:/altera_projects/usbfunc/Block1.v(177): [TFMPC] - Missing connection for port 'rdata_ready'.
+# 
+# ** Warning: (vsim-3722) C:/altera_projects/usbfunc/Block1.v(177): [TFMPC] - Missing connection for port 'rbyte_cnt'.
+# 
+# ** Warning: (vsim-3722) C:/altera_projects/usbfunc/Block1.v(177): [TFMPC] - Missing connection for port 'SOP'.
+# 
+add wave -position insertpoint  \
+sim:/Block1_vlg_tst/usb_clk
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+# 
+#           File in use by: Admin  Hostname: MICROSOF-45872F  ProcessID: 3184
+# 
+#           Attempting to use alternate WLF file "./wlft0e84by".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+# 
+#           Using alternate file: ./wlft0e84by
+# 
+run -all
+# Running testbench
+add wave -position insertpoint  \
+sim:/Block1_vlg_tst/treg_dm_inout \
+sim:/Block1_vlg_tst/treg_dp_inout
+restart -f
+# ** Warning: (vsim-3017) C:/altera_projects/usbfunc/Block1.v(125): [TFMPC] - Too few port connections. Expected 17, found 16.
+# 
+#         Region: /Block1_vlg_tst/i1/b2v_inst2
+# ** Warning: (vsim-3722) C:/altera_projects/usbfunc/Block1.v(125): [TFMPC] - Missing connection for port 'SETUP_token'.
+# 
+# ** Warning: (vsim-3017) C:/altera_projects/usbfunc/Block1.v(177): [TFMPC] - Too few port connections. Expected 15, found 11.
+# 
+#         Region: /Block1_vlg_tst/i1/b2v_inst7
+# ** Warning: (vsim-3722) C:/altera_projects/usbfunc/Block1.v(177): [TFMPC] - Missing connection for port 'rdata'.
+# 
+# ** Warning: (vsim-3722) C:/altera_projects/usbfunc/Block1.v(177): [TFMPC] - Missing connection for port 'rdata_ready'.
+# 
+# ** Warning: (vsim-3722) C:/altera_projects/usbfunc/Block1.v(177): [TFMPC] - Missing connection for port 'rbyte_cnt'.
+# 
+# ** Warning: (vsim-3722) C:/altera_projects/usbfunc/Block1.v(177): [TFMPC] - Missing connection for port 'SOP'.
+# 
+run -all
+# Running testbench
+restart -f
+# ** Warning: (vsim-3017) C:/altera_projects/usbfunc/Block1.v(125): [TFMPC] - Too few port connections. Expected 17, found 16.
+# 
+#         Region: /Block1_vlg_tst/i1/b2v_inst2
+# ** Warning: (vsim-3722) C:/altera_projects/usbfunc/Block1.v(125): [TFMPC] - Missing connection for port 'SETUP_token'.
+# 
+# ** Warning: (vsim-3017) C:/altera_projects/usbfunc/Block1.v(177): [TFMPC] - Too few port connections. Expected 15, found 11.
+# 
+#         Region: /Block1_vlg_tst/i1/b2v_inst7
+# ** Warning: (vsim-3722) C:/altera_projects/usbfunc/Block1.v(177): [TFMPC] - Missing connection for port 'rdata'.
+# 
+# ** Warning: (vsim-3722) C:/altera_projects/usbfunc/Block1.v(177): [TFMPC] - Missing connection for port 'rdata_ready'.
+# 
+# ** Warning: (vsim-3722) C:/altera_projects/usbfunc/Block1.v(177): [TFMPC] - Missing connection for port 'rbyte_cnt'.
+# 
+# ** Warning: (vsim-3722) C:/altera_projects/usbfunc/Block1.v(177): [TFMPC] - Missing connection for port 'SOP'.
+# 
+run -all
+# Running testbench
+run -all
+# Break key hit 
+# Simulation stop requested.
+
+stop
+break
+# invoked "break" outside of a loop
+run 
+run
+run
+run
+run
+run
+
+run
+
+run
+
+run
+
+run
+
+run -continue
+restart
+# ** Warning: (vsim-3017) C:/altera_projects/usbfunc/Block1.v(125): [TFMPC] - Too few port connections. Expected 17, found 16.
+# 
+#         Region: /Block1_vlg_tst/i1/b2v_inst2
+# ** Warning: (vsim-3722) C:/altera_projects/usbfunc/Block1.v(125): [TFMPC] - Missing connection for port 'SETUP_token'.
+# 
+# ** Warning: (vsim-3017) C:/altera_projects/usbfunc/Block1.v(177): [TFMPC] - Too few port connections. Expected 15, found 11.
+# 
+#         Region: /Block1_vlg_tst/i1/b2v_inst7
+# ** Warning: (vsim-3722) C:/altera_projects/usbfunc/Block1.v(177): [TFMPC] - Missing connection for port 'rdata'.
+# 
+# ** Warning: (vsim-3722) C:/altera_projects/usbfunc/Block1.v(177): [TFMPC] - Missing connection for port 'rdata_ready'.
+# 
+# ** Warning: (vsim-3722) C:/altera_projects/usbfunc/Block1.v(177): [TFMPC] - Missing connection for port 'rbyte_cnt'.
+# 
+# ** Warning: (vsim-3722) C:/altera_projects/usbfunc/Block1.v(177): [TFMPC] - Missing connection for port 'SOP'.
+# 
+step -current
+# Running testbench
+# Break key hit 
+# Simulation stop requested.
+step
+step
+run -all
+vsim -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneiii_ver -L rtl_work -L work -voptargs=\"+acc\" -t 10ns work.Block1_vlg_tst
+# vsim -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneiii_ver -L rtl_work -L work -voptargs=\"+acc\" -t 10ns work.Block1_vlg_tst 
+# Loading work.Block1_vlg_tst
+# Loading work.Block1
+# Loading work.ls_usb_recv
+# Loading work.altiobuf0
+# Loading work.altiobuf0_iobuf_bidir_30p
+# Loading cycloneiii_ver.cycloneiii_io_ibuf
+# Loading cycloneiii_ver.cycloneiii_io_obuf
+# Loading work.ls_usb_core
+# Loading work.uart_controller
+# Loading work.ls_usb_sender
+# ** Warning: (vsim-3017) C:/altera_projects/usbfunc/Block1.v(125): [TFMPC] - Too few port connections. Expected 17, found 16.
+# 
+#         Region: /Block1_vlg_tst/i1/b2v_inst2
+# ** Warning: (vsim-3722) C:/altera_projects/usbfunc/Block1.v(125): [TFMPC] - Missing connection for port 'SETUP_token'.
+# 
+# ** Warning: (vsim-3017) C:/altera_projects/usbfunc/Block1.v(177): [TFMPC] - Too few port connections. Expected 15, found 11.
+# 
+#         Region: /Block1_vlg_tst/i1/b2v_inst7
+# ** Warning: (vsim-3722) C:/altera_projects/usbfunc/Block1.v(177): [TFMPC] - Missing connection for port 'rdata'.
+# 
+# ** Warning: (vsim-3722) C:/altera_projects/usbfunc/Block1.v(177): [TFMPC] - Missing connection for port 'rdata_ready'.
+# 
+# ** Warning: (vsim-3722) C:/altera_projects/usbfunc/Block1.v(177): [TFMPC] - Missing connection for port 'rbyte_cnt'.
+# 
+# ** Warning: (vsim-3722) C:/altera_projects/usbfunc/Block1.v(177): [TFMPC] - Missing connection for port 'SOP'.
+# 
+run -all
+# Running testbench
+# Load canceled
+add wave -position insertpoint  \
+sim:/Block1_vlg_tst/usb_clk
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+# 
+#           File in use by: Admin  Hostname: MICROSOF-45872F  ProcessID: 3184
+# 
+#           Attempting to use alternate WLF file "./wlft63638g".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+# 
+#           Using alternate file: ./wlft63638g
+# 
+run 500
+run 500
+run 500
+run 500
+run 500
+run 500
+run 500
+run 500
+run 500
+run 500
+run 500
+run 500
+run 500
+run 500
+run 500
+run 500
+run 500
+run 500
+run 500
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+restart -f
+# ** Warning: (vsim-3017) C:/altera_projects/usbfunc/Block1.v(125): [TFMPC] - Too few port connections. Expected 17, found 16.
+# 
+#         Region: /Block1_vlg_tst/i1/b2v_inst2
+# ** Warning: (vsim-3722) C:/altera_projects/usbfunc/Block1.v(125): [TFMPC] - Missing connection for port 'SETUP_token'.
+# 
+# ** Warning: (vsim-3017) C:/altera_projects/usbfunc/Block1.v(177): [TFMPC] - Too few port connections. Expected 15, found 11.
+# 
+#         Region: /Block1_vlg_tst/i1/b2v_inst7
+# ** Warning: (vsim-3722) C:/altera_projects/usbfunc/Block1.v(177): [TFMPC] - Missing connection for port 'rdata'.
+# 
+# ** Warning: (vsim-3722) C:/altera_projects/usbfunc/Block1.v(177): [TFMPC] - Missing connection for port 'rdata_ready'.
+# 
+# ** Warning: (vsim-3722) C:/altera_projects/usbfunc/Block1.v(177): [TFMPC] - Missing connection for port 'rbyte_cnt'.
+# 
+# ** Warning: (vsim-3722) C:/altera_projects/usbfunc/Block1.v(177): [TFMPC] - Missing connection for port 'SOP'.
+# 
+add wave -position insertpoint  \
+sim:/Block1_vlg_tst/treg_dm_inout \
+sim:/Block1_vlg_tst/treg_dp_inout
+run
+# Running testbench
+run
+run
+run
+run
+run
+run
+run
+run
+run
+do C:/altera_projects/usbfunc/simulation/modelsim/waveusb.do
+# onerror {resume}
+# quietly WaveActivateNextPane {} 0
+# add wave -noupdate /Block1_vlg_tst/eachvec
+# add wave -noupdate /Block1_vlg_tst/treg_dm_inout
+# add wave -noupdate /Block1_vlg_tst/treg_dp_inout
+# add wave -noupdate /Block1_vlg_tst/inclk
+# ** Error: (vish-4014) No objects found matching '/Block1_vlg_tst/inclk'.
+# Executing ONERROR command at macro C:\altera_projects\usbfunc\simulation\modelsim\waveusb.do line 6
+# add wave -noupdate /Block1_vlg_tst/RX_COM1
+# add wave -noupdate /Block1_vlg_tst/RX_COM2
+# add wave -noupdate /Block1_vlg_tst/clk_usb
+# ** Error: (vish-4014) No objects found matching '/Block1_vlg_tst/clk_usb'.
+# Executing ONERROR command at macro C:\altera_projects\usbfunc\simulation\modelsim\waveusb.do line 9
+# add wave -noupdate /Block1_vlg_tst/d_out_enable
+# add wave -noupdate /Block1_vlg_tst/dm_inout
+# add wave -noupdate /Block1_vlg_tst/dp_inout
+# add wave -noupdate /Block1_vlg_tst/tx_clk
+# add wave -noupdate /Block1_vlg_tst/TX_COM1
+# add wave -noupdate /Block1_vlg_tst/TX_COM2
+# add wave -noupdate /Block1_vlg_tst/TX_COM_LED1
+# add wave -noupdate /Block1_vlg_tst/TX_COM_LED2
+# add wave -noupdate /Block1_vlg_tst/ones_cnt
+# add wave -noupdate /Block1_vlg_tst/ls_pause/num_bits
+# add wave -noupdate /Block1_vlg_tst/send_ls_byte/sbyte
+# add wave -noupdate /Block1_vlg_tst/send_ls_byte/i
+# add wave -noupdate /Block1_vlg_tst/i1/inclk
+# ** Error: (vish-4014) No objects found matching '/Block1_vlg_tst/i1/inclk'.
+# Executing ONERROR command at macro C:\altera_projects\usbfunc\simulation\modelsim\waveusb.do line 22
+# add wave -noupdate /Block1_vlg_tst/i1/RX_COM1
+# add wave -noupdate /Block1_vlg_tst/i1/RX_COM2
+# add wave -noupdate /Block1_vlg_tst/i1/tx_clk
+# add wave -noupdate /Block1_vlg_tst/i1/TX_COM1
+# add wave -noupdate /Block1_vlg_tst/i1/TX_COM2
+# add wave -noupdate /Block1_vlg_tst/i1/d_out_enable
+# add wave -noupdate /Block1_vlg_tst/i1/TX_COM_LED1
+# add wave -noupdate /Block1_vlg_tst/i1/TX_COM_LED2
+# add wave -noupdate /Block1_vlg_tst/i1/dp_inout
+# add wave -noupdate /Block1_vlg_tst/i1/dm_inout
+# add wave -noupdate /Block1_vlg_tst/i1/b2v_inst/clk
+# add wave -noupdate /Block1_vlg_tst/i1/b2v_inst/dp
+# add wave -noupdate /Block1_vlg_tst/i1/b2v_inst/dm
+# add wave -noupdate /Block1_vlg_tst/i1/b2v_inst/d_out_enable
+# add wave -noupdate /Block1_vlg_tst/i1/b2v_inst/alternate_strobe
+# add wave -noupdate /Block1_vlg_tst/i1/b2v_inst/EOP
+# add wave -noupdate /Block1_vlg_tst/i1/b2v_inst/rdata
+# add wave -noupdate /Block1_vlg_tst/i1/b2v_inst/rdata_ready
+# add wave -noupdate /Block1_vlg_tst/i1/b2v_inst/strobe
+# add wave -noupdate /Block1_vlg_tst/i1/b2v_inst/SOP
+# add wave -noupdate /Block1_vlg_tst/i1/b2v_inst/dnrzi
+# add wave -noupdate /Block1_vlg_tst/i1/b2v_inst/clk_counter
+# add wave -noupdate /Block1_vlg_tst/i1/b2v_inst/EOP_counter
+# add wave -noupdate /Block1_vlg_tst/i1/b2v_inst/byteready_counter
+# add wave -noupdate /Block1_vlg_tst/i1/b2v_inst/dpw
+# add wave -noupdate /Block1_vlg_tst/i1/b2v_inst/dmw
+# add wave -noupdate /Block1_vlg_tst/i1/b2v_inst/dp_input
+# add wave -noupdate /Block1_vlg_tst/i1/b2v_inst/dm_input
+# add wave -noupdate /Block1_vlg_tst/i1/b2v_inst/delnrzi
+# add wave -noupdate /Block1_vlg_tst/i1/b2v_inst/EOP_condition
+# add wave -noupdate /Block1_vlg_tst/i1/b2v_inst/dp_change
+# add wave -noupdate /Block1_vlg_tst/i1/b2v_inst/delnrziw
+# add wave -noupdate /Block1_vlg_tst/i1/b2v_inst/outnrzi
+# add wave -noupdate /Block1_vlg_tst/i1/b2v_inst1/areset
+# ** Error: (vish-4014) No objects found matching '/Block1_vlg_tst/i1/b2v_inst1/areset'.
+# Executing ONERROR command at macro C:\altera_projects\usbfunc\simulation\modelsim\waveusb.do line 56
+# add wave -noupdate /Block1_vlg_tst/i1/b2v_inst1/inclk0
+# ** Error: (vish-4014) No objects found matching '/Block1_vlg_tst/i1/b2v_inst1/inclk0'.
+# Executing ONERROR command at macro C:\altera_projects\usbfunc\simulation\modelsim\waveusb.do line 57
+# add wave -noupdate /Block1_vlg_tst/i1/b2v_inst1/c0
+# ** Error: (vish-4014) No objects found matching '/Block1_vlg_tst/i1/b2v_inst1/c0'.
+# Executing ONERROR command at macro C:\altera_projects\usbfunc\simulation\modelsim\waveusb.do line 58
+# add wave -noupdate /Block1_vlg_tst/i1/b2v_inst1/c1
+# ** Error: (vish-4014) No objects found matching '/Block1_vlg_tst/i1/b2v_inst1/c1'.
+# Executing ONERROR command at macro C:\altera_projects\usbfunc\simulation\modelsim\waveusb.do line 59
+# add wave -noupdate /Block1_vlg_tst/i1/b2v_inst2/clk
+# add wave -noupdate /Block1_vlg_tst/i1/b2v_inst2/EOP
+# add wave -noupdate /Block1_vlg_tst/i1/b2v_inst2/rdata
+# add wave -noupdate /Block1_vlg_tst/i1/b2v_inst2/rdata_ready
+# add wave -noupdate /Block1_vlg_tst/i1/b2v_inst2/strobe
+# add wave -noupdate /Block1_vlg_tst/i1/b2v_inst2/SOP
+# add wave -noupdate /Block1_vlg_tst/i1/b2v_inst2/strobe_sender
+# add wave -noupdate /Block1_vlg_tst/i1/b2v_inst2/sixone_signal
+# add wave -noupdate /Block1_vlg_tst/i1/b2v_inst2/SETUP_token
+# add wave -noupdate /Block1_vlg_tst/i1/b2v_inst2/send_reg
+# add wave -noupdate /Block1_vlg_tst/i1/b2v_inst2/sEOP
+# add wave -noupdate /Block1_vlg_tst/i1/b2v_inst2/sdata_ready
+# add wave -noupdate /Block1_vlg_tst/i1/b2v_inst2/btrdcnt_strobe
+# add wave -noupdate /Block1_vlg_tst/i1/b2v_inst2/TX_byte_CRC
+# add wave -noupdate /Block1_vlg_tst/i1/b2v_inst2/RX_byte
+# add wave -noupdate /Block1_vlg_tst/i1/b2v_inst2/TX_EN
+# add wave -noupdate /Block1_vlg_tst/i1/b2v_inst2/RX_DONE
+# add wave -noupdate /Block1_vlg_tst/i1/b2v_inst2/state
+# add wave -noupdate /Block1_vlg_tst/i1/b2v_inst2/bytenum
+# add wave -noupdate /Block1_vlg_tst/i1/b2v_inst2/PID_decoder
+# add wave -noupdate /Block1_vlg_tst/i1/b2v_inst2/byteready_counter
+# add wave -noupdate /Block1_vlg_tst/i1/b2v_inst2/ADDR_ENDP_CRC_decoder
+# add wave -noupdate /Block1_vlg_tst/i1/b2v_inst2/FRAMENUM_CRC_decoder
+# add wave -noupdate /Block1_vlg_tst/i1/b2v_inst2/bmRequestType
+# add wave -noupdate /Block1_vlg_tst/i1/b2v_inst2/bRequestCode
+# add wave -noupdate /Block1_vlg_tst/i1/b2v_inst2/wValue
+# add wave -noupdate /Block1_vlg_tst/i1/b2v_inst2/wIndex
+# add wave -noupdate /Block1_vlg_tst/i1/b2v_inst2/wLength
+# add wave -noupdate /Block1_vlg_tst/i1/b2v_inst2/FIFO_pointer
+# add wave -noupdate /Block1_vlg_tst/i1/b2v_inst2/device_address
+# add wave -noupdate /Block1_vlg_tst/i1/b2v_inst2/transac_counter
+# add wave -noupdate /Block1_vlg_tst/i1/b2v_inst2/EOP_delay
+# add wave -noupdate /Block1_vlg_tst/i1/b2v_inst2/xsEOP
+# add wave -noupdate /Block1_vlg_tst/i1/b2v_inst2/fsm_sync
+# add wave -noupdate /Block1_vlg_tst/i1/b2v_inst2/RX_SEND_USB
+# add wave -noupdate /Block1_vlg_tst/i1/b2v_inst2/SEOP
+# add wave -noupdate /Block1_vlg_tst/i1/b2v_inst3/uart_clk
+# add wave -noupdate /Block1_vlg_tst/i1/b2v_inst3/rbyteready
+# add wave -noupdate /Block1_vlg_tst/i1/b2v_inst3/EOP
+# add wave -noupdate /Block1_vlg_tst/i1/b2v_inst3/uart_tx_byte
+# add wave -noupdate /Block1_vlg_tst/i1/b2v_inst3/uart_rx_byte
+# add wave -noupdate /Block1_vlg_tst/i1/b2v_inst3/uart_tx_com1
+# add wave -noupdate /Block1_vlg_tst/i1/b2v_inst3/uart_rx_com1
+# add wave -noupdate /Block1_vlg_tst/i1/b2v_inst3/uart_tx_en
+# add wave -noupdate /Block1_vlg_tst/i1/b2v_inst3/usb_clk
+# add wave -noupdate /Block1_vlg_tst/i1/b2v_inst3/uart_tx_com2
+# add wave -noupdate /Block1_vlg_tst/i1/b2v_inst3/uart_rx_done
+# add wave -noupdate /Block1_vlg_tst/i1/b2v_inst3/uart_rx_com2
+# add wave -noupdate /Block1_vlg_tst/i1/b2v_inst3/tx_QUEUE_core_pointer
+# add wave -noupdate /Block1_vlg_tst/i1/b2v_inst3/tx_QUEUE_uart_pointer
+# add wave -noupdate /Block1_vlg_tst/i1/b2v_inst3/tx_QUEUE_core_last_val
+# add wave -noupdate /Block1_vlg_tst/i1/b2v_inst3/TX_buffer
+# add wave -noupdate /Block1_vlg_tst/i1/b2v_inst3/TX_shift
+# add wave -noupdate /Block1_vlg_tst/i1/b2v_inst3/RX_buffer
+# add wave -noupdate /Block1_vlg_tst/i1/b2v_inst3/RX_shift
+# add wave -noupdate /Block1_vlg_tst/i1/b2v_inst3/tx_data_ready
+# add wave -noupdate /Block1_vlg_tst/i1/b2v_inst3/tx_data_ready_counter
+# add wave -noupdate /Block1_vlg_tst/i1/b2v_inst3/rx_data_ready
+# add wave -noupdate /Block1_vlg_tst/i1/b2v_inst3/rx_data_ready_counter
+# add wave -noupdate /Block1_vlg_tst/i1/b2v_inst3/uart_tx
+# add wave -noupdate /Block1_vlg_tst/i1/b2v_inst3/uart_rx
+# add wave -noupdate /Block1_vlg_tst/i1/b2v_inst3/is_command_counter
+# add wave -noupdate /Block1_vlg_tst/i1/b2v_inst3/is_command
+# add wave -noupdate /Block1_vlg_tst/i1/b2v_inst3/com_port_number
+# add wave -noupdate /Block1_vlg_tst/i1/b2v_inst3/tx_QUEUE_pointer
+# add wave -noupdate /Block1_vlg_tst/i1/b2v_inst7/clk
+# add wave -noupdate /Block1_vlg_tst/i1/b2v_inst7/EOP
+# add wave -noupdate /Block1_vlg_tst/i1/b2v_inst7/rdata
+# add wave -noupdate /Block1_vlg_tst/i1/b2v_inst7/rdata_ready
+# add wave -noupdate /Block1_vlg_tst/i1/b2v_inst7/rbyte_cnt
+# add wave -noupdate /Block1_vlg_tst/i1/b2v_inst7/core_strobe
+# add wave -noupdate /Block1_vlg_tst/i1/b2v_inst7/SOP
+# add wave -noupdate /Block1_vlg_tst/i1/b2v_inst7/send_reg
+# add wave -noupdate /Block1_vlg_tst/i1/b2v_inst7/sEOP
+# add wave -noupdate /Block1_vlg_tst/i1/b2v_inst7/sdata_ready
+# add wave -noupdate /Block1_vlg_tst/i1/b2v_inst7/dp_out
+# add wave -noupdate /Block1_vlg_tst/i1/b2v_inst7/dm_out
+# add wave -noupdate /Block1_vlg_tst/i1/b2v_inst7/strobe
+# add wave -noupdate /Block1_vlg_tst/i1/b2v_inst7/d_out_enable
+# add wave -noupdate /Block1_vlg_tst/i1/b2v_inst7/sixone_signal
+# add wave -noupdate /Block1_vlg_tst/i1/b2v_inst7/sEOP_delay
+# add wave -noupdate /Block1_vlg_tst/i1/b2v_inst7/out
+# add wave -noupdate /Block1_vlg_tst/i1/b2v_inst7/clk_counter
+# add wave -noupdate /Block1_vlg_tst/i1/b2v_inst7/serial_shift
+# add wave -noupdate /Block1_vlg_tst/i1/b2v_inst7/NRZI_coding
+# add wave -noupdate /Block1_vlg_tst/i1/b2v_inst7/out_enable
+# add wave -noupdate /Block1_vlg_tst/i1/b2v_inst7/sixone_counter
+# add wave -noupdate /Block1_vlg_tst/i1/b2v_inst7/do_bitstaff
+# TreeUpdate [SetDefaultTree]
+# WaveRestoreCursors {{Cursor 1} {5050 ns} 0}
+# quietly wave cursor active 1
+# configure wave -namecolwidth 417
+# configure wave -valuecolwidth 100
+# configure wave -justifyvalue left
+# configure wave -signalnamewidth 0
+# configure wave -snapdistance 10
+# configure wave -datasetprefix 0
+# configure wave -rowmargin 4
+# configure wave -childrowmargin 2
+# configure wave -gridoffset 0
+# configure wave -gridperiod 1
+# configure wave -griddelta 40
+# configure wave -timeline 0
+# configure wave -timelineunits ns
+# update
+# WaveRestoreZoom {52210 ns} {58530 ns}
+restart -f
+# ** Warning: (vsim-3017) C:/altera_projects/usbfunc/Block1.v(125): [TFMPC] - Too few port connections. Expected 17, found 16.
+# 
+#         Region: /Block1_vlg_tst/i1/b2v_inst2
+# ** Warning: (vsim-3722) C:/altera_projects/usbfunc/Block1.v(125): [TFMPC] - Missing connection for port 'SETUP_token'.
+# 
+# ** Warning: (vsim-3017) C:/altera_projects/usbfunc/Block1.v(177): [TFMPC] - Too few port connections. Expected 15, found 11.
+# 
+#         Region: /Block1_vlg_tst/i1/b2v_inst7
+# ** Warning: (vsim-3722) C:/altera_projects/usbfunc/Block1.v(177): [TFMPC] - Missing connection for port 'rdata'.
+# 
+# ** Warning: (vsim-3722) C:/altera_projects/usbfunc/Block1.v(177): [TFMPC] - Missing connection for port 'rdata_ready'.
+# 
+# ** Warning: (vsim-3722) C:/altera_projects/usbfunc/Block1.v(177): [TFMPC] - Missing connection for port 'rbyte_cnt'.
+# 
+# ** Warning: (vsim-3722) C:/altera_projects/usbfunc/Block1.v(177): [TFMPC] - Missing connection for port 'SOP'.
+# 
+run
+# Running testbench
+restart -f
+# ** Warning: (vsim-3017) C:/altera_projects/usbfunc/Block1.v(125): [TFMPC] - Too few port connections. Expected 17, found 16.
+# 
+#         Region: /Block1_vlg_tst/i1/b2v_inst2
+# ** Warning: (vsim-3722) C:/altera_projects/usbfunc/Block1.v(125): [TFMPC] - Missing connection for port 'SETUP_token'.
+# 
+# ** Warning: (vsim-3017) C:/altera_projects/usbfunc/Block1.v(177): [TFMPC] - Too few port connections. Expected 15, found 11.
+# 
+#         Region: /Block1_vlg_tst/i1/b2v_inst7
+# ** Warning: (vsim-3722) C:/altera_projects/usbfunc/Block1.v(177): [TFMPC] - Missing connection for port 'rdata'.
+# 
+# ** Warning: (vsim-3722) C:/altera_projects/usbfunc/Block1.v(177): [TFMPC] - Missing connection for port 'rdata_ready'.
+# 
+# ** Warning: (vsim-3722) C:/altera_projects/usbfunc/Block1.v(177): [TFMPC] - Missing connection for port 'rbyte_cnt'.
+# 
+# ** Warning: (vsim-3722) C:/altera_projects/usbfunc/Block1.v(177): [TFMPC] - Missing connection for port 'SOP'.
+# 
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+# Running testbench
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+vlog -reportprogress 300 -work work C:/altera_projects/usbfunc/simulation/modelsim/Block1.vt
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Block1_vlg_tst
+# 
+# Top level modules:
+# 	Block1_vlg_tst
+# Load canceled
+restart -f
+# Loading work.Block1_vlg_tst
+# ** Warning: (vsim-3017) C:/altera_projects/usbfunc/Block1.v(125): [TFMPC] - Too few port connections. Expected 17, found 16.
+# 
+#         Region: /Block1_vlg_tst/i1/b2v_inst2
+# ** Warning: (vsim-3722) C:/altera_projects/usbfunc/Block1.v(125): [TFMPC] - Missing connection for port 'SETUP_token'.
+# 
+# ** Warning: (vsim-3017) C:/altera_projects/usbfunc/Block1.v(177): [TFMPC] - Too few port connections. Expected 15, found 11.
+# 
+#         Region: /Block1_vlg_tst/i1/b2v_inst7
+# ** Warning: (vsim-3722) C:/altera_projects/usbfunc/Block1.v(177): [TFMPC] - Missing connection for port 'rdata'.
+# 
+# ** Warning: (vsim-3722) C:/altera_projects/usbfunc/Block1.v(177): [TFMPC] - Missing connection for port 'rdata_ready'.
+# 
+# ** Warning: (vsim-3722) C:/altera_projects/usbfunc/Block1.v(177): [TFMPC] - Missing connection for port 'rbyte_cnt'.
+# 
+# ** Warning: (vsim-3722) C:/altera_projects/usbfunc/Block1.v(177): [TFMPC] - Missing connection for port 'SOP'.
+# 
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+vlog -reportprogress 300 -work work C:/altera_projects/usbfunc/simulation/modelsim/Block1.vt
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Block1_vlg_tst
+# 
+# Top level modules:
+# 	Block1_vlg_tst
+restart -f
+# Loading work.Block1_vlg_tst
+# ** Warning: (vsim-3017) C:/altera_projects/usbfunc/Block1.v(125): [TFMPC] - Too few port connections. Expected 17, found 16.
+# 
+#         Region: /Block1_vlg_tst/i1/b2v_inst2
+# ** Warning: (vsim-3722) C:/altera_projects/usbfunc/Block1.v(125): [TFMPC] - Missing connection for port 'SETUP_token'.
+# 
+# ** Warning: (vsim-3017) C:/altera_projects/usbfunc/Block1.v(177): [TFMPC] - Too few port connections. Expected 15, found 11.
+# 
+#         Region: /Block1_vlg_tst/i1/b2v_inst7
+# ** Warning: (vsim-3722) C:/altera_projects/usbfunc/Block1.v(177): [TFMPC] - Missing connection for port 'rdata'.
+# 
+# ** Warning: (vsim-3722) C:/altera_projects/usbfunc/Block1.v(177): [TFMPC] - Missing connection for port 'rdata_ready'.
+# 
+# ** Warning: (vsim-3722) C:/altera_projects/usbfunc/Block1.v(177): [TFMPC] - Missing connection for port 'rbyte_cnt'.
+# 
+# ** Warning: (vsim-3722) C:/altera_projects/usbfunc/Block1.v(177): [TFMPC] - Missing connection for port 'SOP'.
+# 
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+vlog -reportprogress 300 -work work C:/altera_projects/usbfunc/simulation/modelsim/Block1.vt
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Block1_vlg_tst
+# 
+# Top level modules:
+# 	Block1_vlg_tst
+run
+restart -f
+# Loading work.Block1_vlg_tst
+# ** Warning: (vsim-3017) C:/altera_projects/usbfunc/Block1.v(125): [TFMPC] - Too few port connections. Expected 17, found 16.
+# 
+#         Region: /Block1_vlg_tst/i1/b2v_inst2
+# ** Warning: (vsim-3722) C:/altera_projects/usbfunc/Block1.v(125): [TFMPC] - Missing connection for port 'SETUP_token'.
+# 
+# ** Warning: (vsim-3017) C:/altera_projects/usbfunc/Block1.v(177): [TFMPC] - Too few port connections. Expected 15, found 11.
+# 
+#         Region: /Block1_vlg_tst/i1/b2v_inst7
+# ** Warning: (vsim-3722) C:/altera_projects/usbfunc/Block1.v(177): [TFMPC] - Missing connection for port 'rdata'.
+# 
+# ** Warning: (vsim-3722) C:/altera_projects/usbfunc/Block1.v(177): [TFMPC] - Missing connection for port 'rdata_ready'.
+# 
+# ** Warning: (vsim-3722) C:/altera_projects/usbfunc/Block1.v(177): [TFMPC] - Missing connection for port 'rbyte_cnt'.
+# 
+# ** Warning: (vsim-3722) C:/altera_projects/usbfunc/Block1.v(177): [TFMPC] - Missing connection for port 'SOP'.
+# 
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+# WARNING: No extended dataflow license exists
+vlog -reportprogress 300 -work work C:/altera_projects/usbfunc/simulation/modelsim/Block1.vt
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Block1_vlg_tst
+# 
+# Top level modules:
+# 	Block1_vlg_tst
+restart -f
+# Loading work.Block1_vlg_tst
+# ** Warning: (vsim-3017) C:/altera_projects/usbfunc/Block1.v(125): [TFMPC] - Too few port connections. Expected 17, found 16.
+# 
+#         Region: /Block1_vlg_tst/i1/b2v_inst2
+# ** Warning: (vsim-3722) C:/altera_projects/usbfunc/Block1.v(125): [TFMPC] - Missing connection for port 'SETUP_token'.
+# 
+# ** Warning: (vsim-3017) C:/altera_projects/usbfunc/Block1.v(177): [TFMPC] - Too few port connections. Expected 15, found 11.
+# 
+#         Region: /Block1_vlg_tst/i1/b2v_inst7
+# ** Warning: (vsim-3722) C:/altera_projects/usbfunc/Block1.v(177): [TFMPC] - Missing connection for port 'rdata'.
+# 
+# ** Warning: (vsim-3722) C:/altera_projects/usbfunc/Block1.v(177): [TFMPC] - Missing connection for port 'rdata_ready'.
+# 
+# ** Warning: (vsim-3722) C:/altera_projects/usbfunc/Block1.v(177): [TFMPC] - Missing connection for port 'rbyte_cnt'.
+# 
+# ** Warning: (vsim-3722) C:/altera_projects/usbfunc/Block1.v(177): [TFMPC] - Missing connection for port 'SOP'.
+# 
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+vlog -reportprogress 300 -work work C:/altera_projects/usbfunc/simulation/modelsim/Block1.vt
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Block1_vlg_tst
+# 
+# Top level modules:
+# 	Block1_vlg_tst
+restart -f
+# Loading work.Block1_vlg_tst
+# ** Warning: (vsim-3017) C:/altera_projects/usbfunc/Block1.v(125): [TFMPC] - Too few port connections. Expected 17, found 16.
+# 
+#         Region: /Block1_vlg_tst/i1/b2v_inst2
+# ** Warning: (vsim-3722) C:/altera_projects/usbfunc/Block1.v(125): [TFMPC] - Missing connection for port 'SETUP_token'.
+# 
+# ** Warning: (vsim-3017) C:/altera_projects/usbfunc/Block1.v(177): [TFMPC] - Too few port connections. Expected 15, found 11.
+# 
+#         Region: /Block1_vlg_tst/i1/b2v_inst7
+# ** Warning: (vsim-3722) C:/altera_projects/usbfunc/Block1.v(177): [TFMPC] - Missing connection for port 'rdata'.
+# 
+# ** Warning: (vsim-3722) C:/altera_projects/usbfunc/Block1.v(177): [TFMPC] - Missing connection for port 'rdata_ready'.
+# 
+# ** Warning: (vsim-3722) C:/altera_projects/usbfunc/Block1.v(177): [TFMPC] - Missing connection for port 'rbyte_cnt'.
+# 
+# ** Warning: (vsim-3722) C:/altera_projects/usbfunc/Block1.v(177): [TFMPC] - Missing connection for port 'SOP'.
+# 
+run
+run
+run
+run
+# Running testbench
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+vlog -reportprogress 300 -work work C:/altera_projects/usbfunc/simulation/modelsim/Block1.vt
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Block1_vlg_tst
+# 
+# Top level modules:
+# 	Block1_vlg_tst
+restart -f
+# Loading work.Block1_vlg_tst
+# ** Warning: (vsim-3017) C:/altera_projects/usbfunc/Block1.v(125): [TFMPC] - Too few port connections. Expected 17, found 16.
+# 
+#         Region: /Block1_vlg_tst/i1/b2v_inst2
+# ** Warning: (vsim-3722) C:/altera_projects/usbfunc/Block1.v(125): [TFMPC] - Missing connection for port 'SETUP_token'.
+# 
+# ** Warning: (vsim-3017) C:/altera_projects/usbfunc/Block1.v(177): [TFMPC] - Too few port connections. Expected 15, found 11.
+# 
+#         Region: /Block1_vlg_tst/i1/b2v_inst7
+# ** Warning: (vsim-3722) C:/altera_projects/usbfunc/Block1.v(177): [TFMPC] - Missing connection for port 'rdata'.
+# 
+# ** Warning: (vsim-3722) C:/altera_projects/usbfunc/Block1.v(177): [TFMPC] - Missing connection for port 'rdata_ready'.
+# 
+# ** Warning: (vsim-3722) C:/altera_projects/usbfunc/Block1.v(177): [TFMPC] - Missing connection for port 'rbyte_cnt'.
+# 
+# ** Warning: (vsim-3722) C:/altera_projects/usbfunc/Block1.v(177): [TFMPC] - Missing connection for port 'SOP'.
+# 
+run
+# Running testbench
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+vlog -reportprogress 300 -work work C:/altera_projects/usbfunc/simulation/modelsim/Block1.vt
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Block1_vlg_tst
+# 
+# Top level modules:
+# 	Block1_vlg_tst
+restart -f
+# Loading work.Block1_vlg_tst
+# ** Warning: (vsim-3017) C:/altera_projects/usbfunc/Block1.v(125): [TFMPC] - Too few port connections. Expected 17, found 16.
+# 
+#         Region: /Block1_vlg_tst/i1/b2v_inst2
+# ** Warning: (vsim-3722) C:/altera_projects/usbfunc/Block1.v(125): [TFMPC] - Missing connection for port 'SETUP_token'.
+# 
+# ** Warning: (vsim-3017) C:/altera_projects/usbfunc/Block1.v(177): [TFMPC] - Too few port connections. Expected 15, found 11.
+# 
+#         Region: /Block1_vlg_tst/i1/b2v_inst7
+# ** Warning: (vsim-3722) C:/altera_projects/usbfunc/Block1.v(177): [TFMPC] - Missing connection for port 'rdata'.
+# 
+# ** Warning: (vsim-3722) C:/altera_projects/usbfunc/Block1.v(177): [TFMPC] - Missing connection for port 'rdata_ready'.
+# 
+# ** Warning: (vsim-3722) C:/altera_projects/usbfunc/Block1.v(177): [TFMPC] - Missing connection for port 'rbyte_cnt'.
+# 
+# ** Warning: (vsim-3722) C:/altera_projects/usbfunc/Block1.v(177): [TFMPC] - Missing connection for port 'SOP'.
+# 
+run
+run
+run
+# Running testbench
+run
+run
+run
+run
+run
+run
+run
+run
+vsim -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneiii_ver -L rtl_work -L work -voptargs=\"+acc\" -t ns work.Block1_vlg_tst
+# vsim -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneiii_ver -L rtl_work -L work -voptargs=\"+acc\" -t ns work.Block1_vlg_tst 
+# Loading work.Block1_vlg_tst
+# Loading work.Block1
+# Loading work.ls_usb_recv
+# Loading work.altiobuf0
+# Loading work.altiobuf0_iobuf_bidir_30p
+# Loading cycloneiii_ver.cycloneiii_io_ibuf
+# Loading cycloneiii_ver.cycloneiii_io_obuf
+# Loading work.ls_usb_core
+# Loading work.uart_controller
+# Loading work.ls_usb_sender
+# ** Warning: (vsim-3017) C:/altera_projects/usbfunc/Block1.v(125): [TFMPC] - Too few port connections. Expected 17, found 16.
+# 
+#         Region: /Block1_vlg_tst/i1/b2v_inst2
+# ** Warning: (vsim-3722) C:/altera_projects/usbfunc/Block1.v(125): [TFMPC] - Missing connection for port 'SETUP_token'.
+# 
+# ** Warning: (vsim-3017) C:/altera_projects/usbfunc/Block1.v(177): [TFMPC] - Too few port connections. Expected 15, found 11.
+# 
+#         Region: /Block1_vlg_tst/i1/b2v_inst7
+# ** Warning: (vsim-3722) C:/altera_projects/usbfunc/Block1.v(177): [TFMPC] - Missing connection for port 'rdata'.
+# 
+# ** Warning: (vsim-3722) C:/altera_projects/usbfunc/Block1.v(177): [TFMPC] - Missing connection for port 'rdata_ready'.
+# 
+# ** Warning: (vsim-3722) C:/altera_projects/usbfunc/Block1.v(177): [TFMPC] - Missing connection for port 'rbyte_cnt'.
+# 
+# ** Warning: (vsim-3722) C:/altera_projects/usbfunc/Block1.v(177): [TFMPC] - Missing connection for port 'SOP'.
+# 
+add wave -position insertpoint  \
+sim:/Block1_vlg_tst/usb_clk
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+# 
+#           File in use by: Admin  Hostname: MICROSOF-45872F  ProcessID: 3184
+# 
+#           Attempting to use alternate WLF file "./wlft09e3re".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+# 
+#           Using alternate file: ./wlft09e3re
+# 
+do C:/altera_projects/usbfunc/simulation/modelsim/waveusb.do
+# onerror {resume}
+# quietly WaveActivateNextPane {} 0
+# add wave -noupdate /Block1_vlg_tst/eachvec
+# add wave -noupdate /Block1_vlg_tst/treg_dm_inout
+# add wave -noupdate /Block1_vlg_tst/treg_dp_inout
+# add wave -noupdate /Block1_vlg_tst/inclk
+# ** Error: (vish-4014) No objects found matching '/Block1_vlg_tst/inclk'.
+# Executing ONERROR command at macro C:\altera_projects\usbfunc\simulation\modelsim\waveusb.do line 6
+# add wave -noupdate /Block1_vlg_tst/RX_COM1
+# add wave -noupdate /Block1_vlg_tst/RX_COM2
+# add wave -noupdate /Block1_vlg_tst/clk_usb
+# ** Error: (vish-4014) No objects found matching '/Block1_vlg_tst/clk_usb'.
+# Executing ONERROR command at macro C:\altera_projects\usbfunc\simulation\modelsim\waveusb.do line 9
+# add wave -noupdate /Block1_vlg_tst/d_out_enable
+# add wave -noupdate /Block1_vlg_tst/dm_inout
+# add wave -noupdate /Block1_vlg_tst/dp_inout
+# add wave -noupdate /Block1_vlg_tst/tx_clk
+# add wave -noupdate /Block1_vlg_tst/TX_COM1
+# add wave -noupdate /Block1_vlg_tst/TX_COM2
+# add wave -noupdate /Block1_vlg_tst/TX_COM_LED1
+# add wave -noupdate /Block1_vlg_tst/TX_COM_LED2
+# add wave -noupdate /Block1_vlg_tst/ones_cnt
+# add wave -noupdate /Block1_vlg_tst/ls_pause/num_bits
+# add wave -noupdate /Block1_vlg_tst/send_ls_byte/sbyte
+# add wave -noupdate /Block1_vlg_tst/send_ls_byte/i
+# add wave -noupdate /Block1_vlg_tst/i1/inclk
+# ** Error: (vish-4014) No objects found matching '/Block1_vlg_tst/i1/inclk'.
+# Executing ONERROR command at macro C:\altera_projects\usbfunc\simulation\modelsim\waveusb.do line 22
+# add wave -noupdate /Block1_vlg_tst/i1/RX_COM1
+# add wave -noupdate /Block1_vlg_tst/i1/RX_COM2
+# add wave -noupdate /Block1_vlg_tst/i1/tx_clk
+# add wave -noupdate /Block1_vlg_tst/i1/TX_COM1
+# add wave -noupdate /Block1_vlg_tst/i1/TX_COM2
+# add wave -noupdate /Block1_vlg_tst/i1/d_out_enable
+# add wave -noupdate /Block1_vlg_tst/i1/TX_COM_LED1
+# add wave -noupdate /Block1_vlg_tst/i1/TX_COM_LED2
+# add wave -noupdate /Block1_vlg_tst/i1/dp_inout
+# add wave -noupdate /Block1_vlg_tst/i1/dm_inout
+# add wave -noupdate /Block1_vlg_tst/i1/b2v_inst/clk
+# add wave -noupdate /Block1_vlg_tst/i1/b2v_inst/dp
+# add wave -noupdate /Block1_vlg_tst/i1/b2v_inst/dm
+# add wave -noupdate /Block1_vlg_tst/i1/b2v_inst/d_out_enable
+# add wave -noupdate /Block1_vlg_tst/i1/b2v_inst/alternate_strobe
+# add wave -noupdate /Block1_vlg_tst/i1/b2v_inst/EOP
+# add wave -noupdate /Block1_vlg_tst/i1/b2v_inst/rdata
+# add wave -noupdate /Block1_vlg_tst/i1/b2v_inst/rdata_ready
+# add wave -noupdate /Block1_vlg_tst/i1/b2v_inst/strobe
+# add wave -noupdate /Block1_vlg_tst/i1/b2v_inst/SOP
+# add wave -noupdate /Block1_vlg_tst/i1/b2v_inst/dnrzi
+# add wave -noupdate /Block1_vlg_tst/i1/b2v_inst/clk_counter
+# add wave -noupdate /Block1_vlg_tst/i1/b2v_inst/EOP_counter
+# add wave -noupdate /Block1_vlg_tst/i1/b2v_inst/byteready_counter
+# add wave -noupdate /Block1_vlg_tst/i1/b2v_inst/dpw
+# add wave -noupdate /Block1_vlg_tst/i1/b2v_inst/dmw
+# add wave -noupdate /Block1_vlg_tst/i1/b2v_inst/dp_input
+# add wave -noupdate /Block1_vlg_tst/i1/b2v_inst/dm_input
+# add wave -noupdate /Block1_vlg_tst/i1/b2v_inst/delnrzi
+# add wave -noupdate /Block1_vlg_tst/i1/b2v_inst/EOP_condition
+# add wave -noupdate /Block1_vlg_tst/i1/b2v_inst/dp_change
+# add wave -noupdate /Block1_vlg_tst/i1/b2v_inst/delnrziw
+# add wave -noupdate /Block1_vlg_tst/i1/b2v_inst/outnrzi
+# add wave -noupdate /Block1_vlg_tst/i1/b2v_inst1/areset
+# ** Error: (vish-4014) No objects found matching '/Block1_vlg_tst/i1/b2v_inst1/areset'.
+# Executing ONERROR command at macro C:\altera_projects\usbfunc\simulation\modelsim\waveusb.do line 56
+# add wave -noupdate /Block1_vlg_tst/i1/b2v_inst1/inclk0
+# ** Error: (vish-4014) No objects found matching '/Block1_vlg_tst/i1/b2v_inst1/inclk0'.
+# Executing ONERROR command at macro C:\altera_projects\usbfunc\simulation\modelsim\waveusb.do line 57
+# add wave -noupdate /Block1_vlg_tst/i1/b2v_inst1/c0
+# ** Error: (vish-4014) No objects found matching '/Block1_vlg_tst/i1/b2v_inst1/c0'.
+# Executing ONERROR command at macro C:\altera_projects\usbfunc\simulation\modelsim\waveusb.do line 58
+# add wave -noupdate /Block1_vlg_tst/i1/b2v_inst1/c1
+# ** Error: (vish-4014) No objects found matching '/Block1_vlg_tst/i1/b2v_inst1/c1'.
+# Executing ONERROR command at macro C:\altera_projects\usbfunc\simulation\modelsim\waveusb.do line 59
+# add wave -noupdate /Block1_vlg_tst/i1/b2v_inst2/clk
+# add wave -noupdate /Block1_vlg_tst/i1/b2v_inst2/EOP
+# add wave -noupdate /Block1_vlg_tst/i1/b2v_inst2/rdata
+# add wave -noupdate /Block1_vlg_tst/i1/b2v_inst2/rdata_ready
+# add wave -noupdate /Block1_vlg_tst/i1/b2v_inst2/strobe
+# add wave -noupdate /Block1_vlg_tst/i1/b2v_inst2/SOP
+# add wave -noupdate /Block1_vlg_tst/i1/b2v_inst2/strobe_sender
+# add wave -noupdate /Block1_vlg_tst/i1/b2v_inst2/sixone_signal
+# add wave -noupdate /Block1_vlg_tst/i1/b2v_inst2/SETUP_token
+# add wave -noupdate /Block1_vlg_tst/i1/b2v_inst2/send_reg
+# add wave -noupdate /Block1_vlg_tst/i1/b2v_inst2/sEOP
+# add wave -noupdate /Block1_vlg_tst/i1/b2v_inst2/sdata_ready
+# add wave -noupdate /Block1_vlg_tst/i1/b2v_inst2/btrdcnt_strobe
+# add wave -noupdate /Block1_vlg_tst/i1/b2v_inst2/TX_byte_CRC
+# add wave -noupdate /Block1_vlg_tst/i1/b2v_inst2/RX_byte
+# add wave -noupdate /Block1_vlg_tst/i1/b2v_inst2/TX_EN
+# add wave -noupdate /Block1_vlg_tst/i1/b2v_inst2/RX_DONE
+# add wave -noupdate /Block1_vlg_tst/i1/b2v_inst2/state
+# add wave -noupdate /Block1_vlg_tst/i1/b2v_inst2/bytenum
+# add wave -noupdate /Block1_vlg_tst/i1/b2v_inst2/PID_decoder
+# add wave -noupdate /Block1_vlg_tst/i1/b2v_inst2/byteready_counter
+# add wave -noupdate /Block1_vlg_tst/i1/b2v_inst2/ADDR_ENDP_CRC_decoder
+# add wave -noupdate /Block1_vlg_tst/i1/b2v_inst2/FRAMENUM_CRC_decoder
+# add wave -noupdate /Block1_vlg_tst/i1/b2v_inst2/bmRequestType
+# add wave -noupdate /Block1_vlg_tst/i1/b2v_inst2/bRequestCode
+# add wave -noupdate /Block1_vlg_tst/i1/b2v_inst2/wValue
+# add wave -noupdate /Block1_vlg_tst/i1/b2v_inst2/wIndex
+# add wave -noupdate /Block1_vlg_tst/i1/b2v_inst2/wLength
+# add wave -noupdate /Block1_vlg_tst/i1/b2v_inst2/FIFO_pointer
+# add wave -noupdate /Block1_vlg_tst/i1/b2v_inst2/device_address
+# add wave -noupdate /Block1_vlg_tst/i1/b2v_inst2/transac_counter
+# add wave -noupdate /Block1_vlg_tst/i1/b2v_inst2/EOP_delay
+# add wave -noupdate /Block1_vlg_tst/i1/b2v_inst2/xsEOP
+# add wave -noupdate /Block1_vlg_tst/i1/b2v_inst2/fsm_sync
+# add wave -noupdate /Block1_vlg_tst/i1/b2v_inst2/RX_SEND_USB
+# add wave -noupdate /Block1_vlg_tst/i1/b2v_inst2/SEOP
+# add wave -noupdate /Block1_vlg_tst/i1/b2v_inst3/uart_clk
+# add wave -noupdate /Block1_vlg_tst/i1/b2v_inst3/rbyteready
+# add wave -noupdate /Block1_vlg_tst/i1/b2v_inst3/EOP
+# add wave -noupdate /Block1_vlg_tst/i1/b2v_inst3/uart_tx_byte
+# add wave -noupdate /Block1_vlg_tst/i1/b2v_inst3/uart_rx_byte
+# add wave -noupdate /Block1_vlg_tst/i1/b2v_inst3/uart_tx_com1
+# add wave -noupdate /Block1_vlg_tst/i1/b2v_inst3/uart_rx_com1
+# add wave -noupdate /Block1_vlg_tst/i1/b2v_inst3/uart_tx_en
+# add wave -noupdate /Block1_vlg_tst/i1/b2v_inst3/usb_clk
+# add wave -noupdate /Block1_vlg_tst/i1/b2v_inst3/uart_tx_com2
+# add wave -noupdate /Block1_vlg_tst/i1/b2v_inst3/uart_rx_done
+# add wave -noupdate /Block1_vlg_tst/i1/b2v_inst3/uart_rx_com2
+# add wave -noupdate /Block1_vlg_tst/i1/b2v_inst3/tx_QUEUE_core_pointer
+# add wave -noupdate /Block1_vlg_tst/i1/b2v_inst3/tx_QUEUE_uart_pointer
+# add wave -noupdate /Block1_vlg_tst/i1/b2v_inst3/tx_QUEUE_core_last_val
+# add wave -noupdate /Block1_vlg_tst/i1/b2v_inst3/TX_buffer
+# add wave -noupdate /Block1_vlg_tst/i1/b2v_inst3/TX_shift
+# add wave -noupdate /Block1_vlg_tst/i1/b2v_inst3/RX_buffer
+# add wave -noupdate /Block1_vlg_tst/i1/b2v_inst3/RX_shift
+# add wave -noupdate /Block1_vlg_tst/i1/b2v_inst3/tx_data_ready
+# add wave -noupdate /Block1_vlg_tst/i1/b2v_inst3/tx_data_ready_counter
+# add wave -noupdate /Block1_vlg_tst/i1/b2v_inst3/rx_data_ready
+# add wave -noupdate /Block1_vlg_tst/i1/b2v_inst3/rx_data_ready_counter
+# add wave -noupdate /Block1_vlg_tst/i1/b2v_inst3/uart_tx
+# add wave -noupdate /Block1_vlg_tst/i1/b2v_inst3/uart_rx
+# add wave -noupdate /Block1_vlg_tst/i1/b2v_inst3/is_command_counter
+# add wave -noupdate /Block1_vlg_tst/i1/b2v_inst3/is_command
+# add wave -noupdate /Block1_vlg_tst/i1/b2v_inst3/com_port_number
+# add wave -noupdate /Block1_vlg_tst/i1/b2v_inst3/tx_QUEUE_pointer
+# add wave -noupdate /Block1_vlg_tst/i1/b2v_inst7/clk
+# add wave -noupdate /Block1_vlg_tst/i1/b2v_inst7/EOP
+# add wave -noupdate /Block1_vlg_tst/i1/b2v_inst7/rdata
+# add wave -noupdate /Block1_vlg_tst/i1/b2v_inst7/rdata_ready
+# add wave -noupdate /Block1_vlg_tst/i1/b2v_inst7/rbyte_cnt
+# add wave -noupdate /Block1_vlg_tst/i1/b2v_inst7/core_strobe
+# add wave -noupdate /Block1_vlg_tst/i1/b2v_inst7/SOP
+# add wave -noupdate /Block1_vlg_tst/i1/b2v_inst7/send_reg
+# add wave -noupdate /Block1_vlg_tst/i1/b2v_inst7/sEOP
+# add wave -noupdate /Block1_vlg_tst/i1/b2v_inst7/sdata_ready
+# add wave -noupdate /Block1_vlg_tst/i1/b2v_inst7/dp_out
+# add wave -noupdate /Block1_vlg_tst/i1/b2v_inst7/dm_out
+# add wave -noupdate /Block1_vlg_tst/i1/b2v_inst7/strobe
+# add wave -noupdate /Block1_vlg_tst/i1/b2v_inst7/d_out_enable
+# add wave -noupdate /Block1_vlg_tst/i1/b2v_inst7/sixone_signal
+# add wave -noupdate /Block1_vlg_tst/i1/b2v_inst7/sEOP_delay
+# add wave -noupdate /Block1_vlg_tst/i1/b2v_inst7/out
+# add wave -noupdate /Block1_vlg_tst/i1/b2v_inst7/clk_counter
+# add wave -noupdate /Block1_vlg_tst/i1/b2v_inst7/serial_shift
+# add wave -noupdate /Block1_vlg_tst/i1/b2v_inst7/NRZI_coding
+# add wave -noupdate /Block1_vlg_tst/i1/b2v_inst7/out_enable
+# add wave -noupdate /Block1_vlg_tst/i1/b2v_inst7/sixone_counter
+# add wave -noupdate /Block1_vlg_tst/i1/b2v_inst7/do_bitstaff
+# TreeUpdate [SetDefaultTree]
+# WaveRestoreCursors {{Cursor 1} {5050 ns} 0}
+# quietly wave cursor active 1
+# configure wave -namecolwidth 417
+# configure wave -valuecolwidth 100
+# configure wave -justifyvalue left
+# configure wave -signalnamewidth 0
+# configure wave -snapdistance 10
+# configure wave -datasetprefix 0
+# configure wave -rowmargin 4
+# configure wave -childrowmargin 2
+# configure wave -gridoffset 0
+# configure wave -gridperiod 1
+# configure wave -griddelta 40
+# configure wave -timeline 0
+# configure wave -timelineunits ns
+# update
+# WaveRestoreZoom {52210 ns} {58530 ns}
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+# Running testbench
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+vlog -reportprogress 300 -work work C:/altera_projects/usbfunc/simulation/modelsim/Block1.vt
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Block1_vlg_tst
+# 
+# Top level modules:
+# 	Block1_vlg_tst
+restart -f
+# Loading work.Block1_vlg_tst
+# ** Warning: (vsim-3017) C:/altera_projects/usbfunc/Block1.v(125): [TFMPC] - Too few port connections. Expected 17, found 16.
+# 
+#         Region: /Block1_vlg_tst/i1/b2v_inst2
+# ** Warning: (vsim-3722) C:/altera_projects/usbfunc/Block1.v(125): [TFMPC] - Missing connection for port 'SETUP_token'.
+# 
+# ** Warning: (vsim-3017) C:/altera_projects/usbfunc/Block1.v(177): [TFMPC] - Too few port connections. Expected 15, found 11.
+# 
+#         Region: /Block1_vlg_tst/i1/b2v_inst7
+# ** Warning: (vsim-3722) C:/altera_projects/usbfunc/Block1.v(177): [TFMPC] - Missing connection for port 'rdata'.
+# 
+# ** Warning: (vsim-3722) C:/altera_projects/usbfunc/Block1.v(177): [TFMPC] - Missing connection for port 'rdata_ready'.
+# 
+# ** Warning: (vsim-3722) C:/altera_projects/usbfunc/Block1.v(177): [TFMPC] - Missing connection for port 'rbyte_cnt'.
+# 
+# ** Warning: (vsim-3722) C:/altera_projects/usbfunc/Block1.v(177): [TFMPC] - Missing connection for port 'SOP'.
+# 
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+vlog -reportprogress 300 -work work C:/altera_projects/usbfunc/simulation/modelsim/Block1.vt
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Block1_vlg_tst
+# 
+# Top level modules:
+# 	Block1_vlg_tst
+restart -f
+# Loading work.Block1_vlg_tst
+# ** Warning: (vsim-3017) C:/altera_projects/usbfunc/Block1.v(125): [TFMPC] - Too few port connections. Expected 17, found 16.
+# 
+#         Region: /Block1_vlg_tst/i1/b2v_inst2
+# ** Warning: (vsim-3722) C:/altera_projects/usbfunc/Block1.v(125): [TFMPC] - Missing connection for port 'SETUP_token'.
+# 
+# ** Warning: (vsim-3017) C:/altera_projects/usbfunc/Block1.v(177): [TFMPC] - Too few port connections. Expected 15, found 11.
+# 
+#         Region: /Block1_vlg_tst/i1/b2v_inst7
+# ** Warning: (vsim-3722) C:/altera_projects/usbfunc/Block1.v(177): [TFMPC] - Missing connection for port 'rdata'.
+# 
+# ** Warning: (vsim-3722) C:/altera_projects/usbfunc/Block1.v(177): [TFMPC] - Missing connection for port 'rdata_ready'.
+# 
+# ** Warning: (vsim-3722) C:/altera_projects/usbfunc/Block1.v(177): [TFMPC] - Missing connection for port 'rbyte_cnt'.
+# 
+# ** Warning: (vsim-3722) C:/altera_projects/usbfunc/Block1.v(177): [TFMPC] - Missing connection for port 'SOP'.
+# 
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+vlog -reportprogress 300 -work work C:/altera_projects/usbfunc/simulation/modelsim/Block1.vt
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Block1_vlg_tst
+# 
+# Top level modules:
+# 	Block1_vlg_tst
+vlog -reportprogress 300 -work work C:/altera_projects/usbfunc/simulation/modelsim/Block1.vt
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Block1_vlg_tst
+# 
+# Top level modules:
+# 	Block1_vlg_tst
+restart -f
+# Loading work.Block1_vlg_tst
+# ** Warning: (vsim-3017) C:/altera_projects/usbfunc/Block1.v(125): [TFMPC] - Too few port connections. Expected 17, found 16.
+# 
+#         Region: /Block1_vlg_tst/i1/b2v_inst2
+# ** Warning: (vsim-3722) C:/altera_projects/usbfunc/Block1.v(125): [TFMPC] - Missing connection for port 'SETUP_token'.
+# 
+# ** Warning: (vsim-3017) C:/altera_projects/usbfunc/Block1.v(177): [TFMPC] - Too few port connections. Expected 15, found 11.
+# 
+#         Region: /Block1_vlg_tst/i1/b2v_inst7
+# ** Warning: (vsim-3722) C:/altera_projects/usbfunc/Block1.v(177): [TFMPC] - Missing connection for port 'rdata'.
+# 
+# ** Warning: (vsim-3722) C:/altera_projects/usbfunc/Block1.v(177): [TFMPC] - Missing connection for port 'rdata_ready'.
+# 
+# ** Warning: (vsim-3722) C:/altera_projects/usbfunc/Block1.v(177): [TFMPC] - Missing connection for port 'rbyte_cnt'.
+# 
+# ** Warning: (vsim-3722) C:/altera_projects/usbfunc/Block1.v(177): [TFMPC] - Missing connection for port 'SOP'.
+# 
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+vlog -reportprogress 300 -work work C:/altera_projects/usbfunc/simulation/modelsim/Block1.vt
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Block1_vlg_tst
+# 
+# Top level modules:
+# 	Block1_vlg_tst
+restart -f
+# Loading work.Block1_vlg_tst
+# ** Warning: (vsim-3017) C:/altera_projects/usbfunc/Block1.v(125): [TFMPC] - Too few port connections. Expected 17, found 16.
+# 
+#         Region: /Block1_vlg_tst/i1/b2v_inst2
+# ** Warning: (vsim-3722) C:/altera_projects/usbfunc/Block1.v(125): [TFMPC] - Missing connection for port 'SETUP_token'.
+# 
+# ** Warning: (vsim-3017) C:/altera_projects/usbfunc/Block1.v(177): [TFMPC] - Too few port connections. Expected 15, found 11.
+# 
+#         Region: /Block1_vlg_tst/i1/b2v_inst7
+# ** Warning: (vsim-3722) C:/altera_projects/usbfunc/Block1.v(177): [TFMPC] - Missing connection for port 'rdata'.
+# 
+# ** Warning: (vsim-3722) C:/altera_projects/usbfunc/Block1.v(177): [TFMPC] - Missing connection for port 'rdata_ready'.
+# 
+# ** Warning: (vsim-3722) C:/altera_projects/usbfunc/Block1.v(177): [TFMPC] - Missing connection for port 'rbyte_cnt'.
+# 
+# ** Warning: (vsim-3722) C:/altera_projects/usbfunc/Block1.v(177): [TFMPC] - Missing connection for port 'SOP'.
+# 
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+vlog -reportprogress 300 -work work C:/altera_projects/usbfunc/simulation/modelsim/Block1.vt
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Block1_vlg_tst
+# 
+# Top level modules:
+# 	Block1_vlg_tst
+restart -f
+# Loading work.Block1_vlg_tst
+# ** Warning: (vsim-3017) C:/altera_projects/usbfunc/Block1.v(125): [TFMPC] - Too few port connections. Expected 17, found 16.
+# 
+#         Region: /Block1_vlg_tst/i1/b2v_inst2
+# ** Warning: (vsim-3722) C:/altera_projects/usbfunc/Block1.v(125): [TFMPC] - Missing connection for port 'SETUP_token'.
+# 
+# ** Warning: (vsim-3017) C:/altera_projects/usbfunc/Block1.v(177): [TFMPC] - Too few port connections. Expected 15, found 11.
+# 
+#         Region: /Block1_vlg_tst/i1/b2v_inst7
+# ** Warning: (vsim-3722) C:/altera_projects/usbfunc/Block1.v(177): [TFMPC] - Missing connection for port 'rdata'.
+# 
+# ** Warning: (vsim-3722) C:/altera_projects/usbfunc/Block1.v(177): [TFMPC] - Missing connection for port 'rdata_ready'.
+# 
+# ** Warning: (vsim-3722) C:/altera_projects/usbfunc/Block1.v(177): [TFMPC] - Missing connection for port 'rbyte_cnt'.
+# 
+# ** Warning: (vsim-3722) C:/altera_projects/usbfunc/Block1.v(177): [TFMPC] - Missing connection for port 'SOP'.
+# 
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+vlog -reportprogress 300 -work work C:/altera_projects/usbfunc/simulation/modelsim/Block1.vt
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Block1_vlg_tst
+# 
+# Top level modules:
+# 	Block1_vlg_tst
+vlog -reportprogress 300 -work work C:/altera_projects/usbfunc/simulation/modelsim/Block1.vt
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Block1_vlg_tst
+# 
+# Top level modules:
+# 	Block1_vlg_tst
+restart -f
+# Loading work.Block1_vlg_tst
+# ** Warning: (vsim-3017) C:/altera_projects/usbfunc/Block1.v(125): [TFMPC] - Too few port connections. Expected 17, found 16.
+# 
+#         Region: /Block1_vlg_tst/i1/b2v_inst2
+# ** Warning: (vsim-3722) C:/altera_projects/usbfunc/Block1.v(125): [TFMPC] - Missing connection for port 'SETUP_token'.
+# 
+# ** Warning: (vsim-3017) C:/altera_projects/usbfunc/Block1.v(177): [TFMPC] - Too few port connections. Expected 15, found 11.
+# 
+#         Region: /Block1_vlg_tst/i1/b2v_inst7
+# ** Warning: (vsim-3722) C:/altera_projects/usbfunc/Block1.v(177): [TFMPC] - Missing connection for port 'rdata'.
+# 
+# ** Warning: (vsim-3722) C:/altera_projects/usbfunc/Block1.v(177): [TFMPC] - Missing connection for port 'rdata_ready'.
+# 
+# ** Warning: (vsim-3722) C:/altera_projects/usbfunc/Block1.v(177): [TFMPC] - Missing connection for port 'rbyte_cnt'.
+# 
+# ** Warning: (vsim-3722) C:/altera_projects/usbfunc/Block1.v(177): [TFMPC] - Missing connection for port 'SOP'.
+# 
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+vlog -reportprogress 300 -work work C:/altera_projects/usbfunc/simulation/modelsim/Block1.vt
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Block1_vlg_tst
+# 
+# Top level modules:
+# 	Block1_vlg_tst
+restart -f
+# Loading work.Block1_vlg_tst
+# ** Warning: (vsim-3017) C:/altera_projects/usbfunc/Block1.v(125): [TFMPC] - Too few port connections. Expected 17, found 16.
+# 
+#         Region: /Block1_vlg_tst/i1/b2v_inst2
+# ** Warning: (vsim-3722) C:/altera_projects/usbfunc/Block1.v(125): [TFMPC] - Missing connection for port 'SETUP_token'.
+# 
+# ** Warning: (vsim-3017) C:/altera_projects/usbfunc/Block1.v(177): [TFMPC] - Too few port connections. Expected 15, found 11.
+# 
+#         Region: /Block1_vlg_tst/i1/b2v_inst7
+# ** Warning: (vsim-3722) C:/altera_projects/usbfunc/Block1.v(177): [TFMPC] - Missing connection for port 'rdata'.
+# 
+# ** Warning: (vsim-3722) C:/altera_projects/usbfunc/Block1.v(177): [TFMPC] - Missing connection for port 'rdata_ready'.
+# 
+# ** Warning: (vsim-3722) C:/altera_projects/usbfunc/Block1.v(177): [TFMPC] - Missing connection for port 'rbyte_cnt'.
+# 
+# ** Warning: (vsim-3722) C:/altera_projects/usbfunc/Block1.v(177): [TFMPC] - Missing connection for port 'SOP'.
+# 
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+vlog -reportprogress 300 -work work C:/altera_projects/usbfunc/simulation/modelsim/Block1.vt
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Block1_vlg_tst
+# 
+# Top level modules:
+# 	Block1_vlg_tst
+# internal error on MenuItemCan 
+# m is .mBar.file label is End Simulation state is disabled 
+#  Trace back:  
+#    <5: ::Vsimmenu::MenuItemCan .mBar.file {End Simulation} disabled 
+#    >4: ::.main_pane.wave.interior.cs.body.pw.wf.tree Action .main_pane.wave SetMenuState {{can_open {::Vsimmenu::MenuItemCan .mBar.file Open...}} {can_close_file {::Vsimmenu::MenuItemCan .mBar.file {End Simulation}}} {can_save {::Vsimmenu::MenuItemCan .mBar.file {Save Dataset...}}} {can_saveas {::Vsimmenu::MenuItemCan .mBar.file {Save List...}}} {can_report {::Vsimmenu::MenuItemCan .mBar.file Report...}} {can_use_source_file {::Vsimmenu::MenuItemCan .mBar.file {Use Source...}}} {can_environment {::Vsimmenu::MenuItemCan .mBar.file Environment}} {can_page_setup {::Vsimmenu::MenuItemCan .mBar.file {Page Setup...}}} {can_print {::Vsimmenu::MenuItemCan .mBar.file Print...}} {can_print_postscript {::Vsimmenu::MenuItemCan .mBar.file {Print Postscript...}}} {can_close_window {::Vsimmenu::MenuItemCan .mBar.file {Close Window}}}} 
+#    <3: ::Wave <trace variable?>  
+#    >2: ::.vcop Action SetMenuState {{can_open {::Vsimmenu::MenuItemCan .mBar.file Open...}} {can_close_file {::Vsimmenu::MenuItemCan .mBar.file {End Simulation}}} {can_save {::Vsimmenu::MenuItemCan .mBar.file {Save Dataset...}}} {can_saveas {::Vsimmenu::MenuItemCan .mBar.file {Save List...}}} {can_report {::Vsimmenu::MenuItemCan .mBar.file Report...}} {can_use_source_file {::Vsimmenu::MenuItemCan .mBar.file {Use Source...}}} {can_environment {::Vsimmenu::MenuItemCan .mBar.file Environment}} {can_page_setup {::Vsimmenu::MenuItemCan .mBar.file {Page Setup...}}} {can_print {::Vsimmenu::MenuItemCan .mBar.file Print...}} {can_print_postscript {::Vsimmenu::MenuItemCan .mBar.file {Print Postscript...}}} {can_close_window {::Vsimmenu::MenuItemCan .mBar.file {Close Window}}}} 
+#    <1: ::Vsimmenu::DefaultMenuPostCmd .mBar.file {FileMenuPostCmd .mBar.file} SetMenuState 
+restart -f
+# Loading work.Block1_vlg_tst
+# ** Warning: (vsim-3017) C:/altera_projects/usbfunc/Block1.v(125): [TFMPC] - Too few port connections. Expected 17, found 16.
+# 
+#         Region: /Block1_vlg_tst/i1/b2v_inst2
+# ** Warning: (vsim-3722) C:/altera_projects/usbfunc/Block1.v(125): [TFMPC] - Missing connection for port 'SETUP_token'.
+# 
+# ** Warning: (vsim-3017) C:/altera_projects/usbfunc/Block1.v(177): [TFMPC] - Too few port connections. Expected 15, found 11.
+# 
+#         Region: /Block1_vlg_tst/i1/b2v_inst7
+# ** Warning: (vsim-3722) C:/altera_projects/usbfunc/Block1.v(177): [TFMPC] - Missing connection for port 'rdata'.
+# 
+# ** Warning: (vsim-3722) C:/altera_projects/usbfunc/Block1.v(177): [TFMPC] - Missing connection for port 'rdata_ready'.
+# 
+# ** Warning: (vsim-3722) C:/altera_projects/usbfunc/Block1.v(177): [TFMPC] - Missing connection for port 'rbyte_cnt'.
+# 
+# ** Warning: (vsim-3722) C:/altera_projects/usbfunc/Block1.v(177): [TFMPC] - Missing connection for port 'SOP'.
+# 
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+vlog -reportprogress 300 -work work C:/altera_projects/usbfunc/simulation/modelsim/Block1.vt
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Block1_vlg_tst
+# 
+# Top level modules:
+# 	Block1_vlg_tst
+restart -f
+# Loading work.Block1_vlg_tst
+# ** Warning: (vsim-3017) C:/altera_projects/usbfunc/Block1.v(125): [TFMPC] - Too few port connections. Expected 17, found 16.
+# 
+#         Region: /Block1_vlg_tst/i1/b2v_inst2
+# ** Warning: (vsim-3722) C:/altera_projects/usbfunc/Block1.v(125): [TFMPC] - Missing connection for port 'SETUP_token'.
+# 
+# ** Warning: (vsim-3017) C:/altera_projects/usbfunc/Block1.v(177): [TFMPC] - Too few port connections. Expected 15, found 11.
+# 
+#         Region: /Block1_vlg_tst/i1/b2v_inst7
+# ** Warning: (vsim-3722) C:/altera_projects/usbfunc/Block1.v(177): [TFMPC] - Missing connection for port 'rdata'.
+# 
+# ** Warning: (vsim-3722) C:/altera_projects/usbfunc/Block1.v(177): [TFMPC] - Missing connection for port 'rdata_ready'.
+# 
+# ** Warning: (vsim-3722) C:/altera_projects/usbfunc/Block1.v(177): [TFMPC] - Missing connection for port 'rbyte_cnt'.
+# 
+# ** Warning: (vsim-3722) C:/altera_projects/usbfunc/Block1.v(177): [TFMPC] - Missing connection for port 'SOP'.
+# 
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+vlog -reportprogress 300 -work work C:/altera_projects/usbfunc/simulation/modelsim/Block1.vt
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Block1_vlg_tst
+# 
+# Top level modules:
+# 	Block1_vlg_tst
+restart -f
+# Loading work.Block1_vlg_tst
+# ** Warning: (vsim-3017) C:/altera_projects/usbfunc/Block1.v(125): [TFMPC] - Too few port connections. Expected 17, found 16.
+# 
+#         Region: /Block1_vlg_tst/i1/b2v_inst2
+# ** Warning: (vsim-3722) C:/altera_projects/usbfunc/Block1.v(125): [TFMPC] - Missing connection for port 'SETUP_token'.
+# 
+# ** Warning: (vsim-3017) C:/altera_projects/usbfunc/Block1.v(177): [TFMPC] - Too few port connections. Expected 15, found 11.
+# 
+#         Region: /Block1_vlg_tst/i1/b2v_inst7
+# ** Warning: (vsim-3722) C:/altera_projects/usbfunc/Block1.v(177): [TFMPC] - Missing connection for port 'rdata'.
+# 
+# ** Warning: (vsim-3722) C:/altera_projects/usbfunc/Block1.v(177): [TFMPC] - Missing connection for port 'rdata_ready'.
+# 
+# ** Warning: (vsim-3722) C:/altera_projects/usbfunc/Block1.v(177): [TFMPC] - Missing connection for port 'rbyte_cnt'.
+# 
+# ** Warning: (vsim-3722) C:/altera_projects/usbfunc/Block1.v(177): [TFMPC] - Missing connection for port 'SOP'.
+# 
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+vlog -reportprogress 300 -work work C:/altera_projects/usbfunc/simulation/modelsim/Block1.vt
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Block1_vlg_tst
+# 
+# Top level modules:
+# 	Block1_vlg_tst
+restart -f
+# Loading work.Block1_vlg_tst
+# ** Warning: (vsim-3017) C:/altera_projects/usbfunc/Block1.v(125): [TFMPC] - Too few port connections. Expected 17, found 16.
+# 
+#         Region: /Block1_vlg_tst/i1/b2v_inst2
+# ** Warning: (vsim-3722) C:/altera_projects/usbfunc/Block1.v(125): [TFMPC] - Missing connection for port 'SETUP_token'.
+# 
+# ** Warning: (vsim-3017) C:/altera_projects/usbfunc/Block1.v(177): [TFMPC] - Too few port connections. Expected 15, found 11.
+# 
+#         Region: /Block1_vlg_tst/i1/b2v_inst7
+# ** Warning: (vsim-3722) C:/altera_projects/usbfunc/Block1.v(177): [TFMPC] - Missing connection for port 'rdata'.
+# 
+# ** Warning: (vsim-3722) C:/altera_projects/usbfunc/Block1.v(177): [TFMPC] - Missing connection for port 'rdata_ready'.
+# 
+# ** Warning: (vsim-3722) C:/altera_projects/usbfunc/Block1.v(177): [TFMPC] - Missing connection for port 'rbyte_cnt'.
+# 
+# ** Warning: (vsim-3722) C:/altera_projects/usbfunc/Block1.v(177): [TFMPC] - Missing connection for port 'SOP'.
+# 
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+vlog -reportprogress 300 -work work C:/altera_projects/usbfunc/simulation/modelsim/Block1.vt
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Block1_vlg_tst
+# 
+# Top level modules:
+# 	Block1_vlg_tst
+restart -f
+# Loading work.Block1_vlg_tst
+# ** Warning: (vsim-3017) C:/altera_projects/usbfunc/Block1.v(125): [TFMPC] - Too few port connections. Expected 17, found 16.
+# 
+#         Region: /Block1_vlg_tst/i1/b2v_inst2
+# ** Warning: (vsim-3722) C:/altera_projects/usbfunc/Block1.v(125): [TFMPC] - Missing connection for port 'SETUP_token'.
+# 
+# ** Warning: (vsim-3017) C:/altera_projects/usbfunc/Block1.v(177): [TFMPC] - Too few port connections. Expected 15, found 11.
+# 
+#         Region: /Block1_vlg_tst/i1/b2v_inst7
+# ** Warning: (vsim-3722) C:/altera_projects/usbfunc/Block1.v(177): [TFMPC] - Missing connection for port 'rdata'.
+# 
+# ** Warning: (vsim-3722) C:/altera_projects/usbfunc/Block1.v(177): [TFMPC] - Missing connection for port 'rdata_ready'.
+# 
+# ** Warning: (vsim-3722) C:/altera_projects/usbfunc/Block1.v(177): [TFMPC] - Missing connection for port 'rbyte_cnt'.
+# 
+# ** Warning: (vsim-3722) C:/altera_projects/usbfunc/Block1.v(177): [TFMPC] - Missing connection for port 'SOP'.
+# 
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+vlog -reportprogress 300 -work work C:/altera_projects/usbfunc/simulation/modelsim/Block1.vt
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Block1_vlg_tst
+# 
+# Top level modules:
+# 	Block1_vlg_tst
+vlog -reportprogress 300 -work work C:/altera_projects/usbfunc/simulation/modelsim/Block1.vt
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Block1_vlg_tst
+# 
+# Top level modules:
+# 	Block1_vlg_tst
+restart -f
+# Loading work.Block1_vlg_tst
+# ** Warning: (vsim-3017) C:/altera_projects/usbfunc/Block1.v(125): [TFMPC] - Too few port connections. Expected 17, found 16.
+# 
+#         Region: /Block1_vlg_tst/i1/b2v_inst2
+# ** Warning: (vsim-3722) C:/altera_projects/usbfunc/Block1.v(125): [TFMPC] - Missing connection for port 'SETUP_token'.
+# 
+# ** Warning: (vsim-3017) C:/altera_projects/usbfunc/Block1.v(177): [TFMPC] - Too few port connections. Expected 15, found 11.
+# 
+#         Region: /Block1_vlg_tst/i1/b2v_inst7
+# ** Warning: (vsim-3722) C:/altera_projects/usbfunc/Block1.v(177): [TFMPC] - Missing connection for port 'rdata'.
+# 
+# ** Warning: (vsim-3722) C:/altera_projects/usbfunc/Block1.v(177): [TFMPC] - Missing connection for port 'rdata_ready'.
+# 
+# ** Warning: (vsim-3722) C:/altera_projects/usbfunc/Block1.v(177): [TFMPC] - Missing connection for port 'rbyte_cnt'.
+# 
+# ** Warning: (vsim-3722) C:/altera_projects/usbfunc/Block1.v(177): [TFMPC] - Missing connection for port 'SOP'.
+# 
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+vlog -reportprogress 300 -work work C:/altera_projects/usbfunc/simulation/modelsim/Block1.vt
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Block1_vlg_tst
+# 
+# Top level modules:
+# 	Block1_vlg_tst
+restart -f
+# Loading work.Block1_vlg_tst
+# ** Warning: (vsim-3017) C:/altera_projects/usbfunc/Block1.v(125): [TFMPC] - Too few port connections. Expected 17, found 16.
+# 
+#         Region: /Block1_vlg_tst/i1/b2v_inst2
+# ** Warning: (vsim-3722) C:/altera_projects/usbfunc/Block1.v(125): [TFMPC] - Missing connection for port 'SETUP_token'.
+# 
+# ** Warning: (vsim-3017) C:/altera_projects/usbfunc/Block1.v(177): [TFMPC] - Too few port connections. Expected 15, found 11.
+# 
+#         Region: /Block1_vlg_tst/i1/b2v_inst7
+# ** Warning: (vsim-3722) C:/altera_projects/usbfunc/Block1.v(177): [TFMPC] - Missing connection for port 'rdata'.
+# 
+# ** Warning: (vsim-3722) C:/altera_projects/usbfunc/Block1.v(177): [TFMPC] - Missing connection for port 'rdata_ready'.
+# 
+# ** Warning: (vsim-3722) C:/altera_projects/usbfunc/Block1.v(177): [TFMPC] - Missing connection for port 'rbyte_cnt'.
+# 
+# ** Warning: (vsim-3722) C:/altera_projects/usbfunc/Block1.v(177): [TFMPC] - Missing connection for port 'SOP'.
+# 
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+vlog -reportprogress 300 -work work C:/altera_projects/usbfunc/simulation/modelsim/Block1.vt
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Block1_vlg_tst
+# 
+# Top level modules:
+# 	Block1_vlg_tst
+restart -f
+# Loading work.Block1_vlg_tst
+# ** Warning: (vsim-3017) C:/altera_projects/usbfunc/Block1.v(125): [TFMPC] - Too few port connections. Expected 17, found 16.
+# 
+#         Region: /Block1_vlg_tst/i1/b2v_inst2
+# ** Warning: (vsim-3722) C:/altera_projects/usbfunc/Block1.v(125): [TFMPC] - Missing connection for port 'SETUP_token'.
+# 
+# ** Warning: (vsim-3017) C:/altera_projects/usbfunc/Block1.v(177): [TFMPC] - Too few port connections. Expected 15, found 11.
+# 
+#         Region: /Block1_vlg_tst/i1/b2v_inst7
+# ** Warning: (vsim-3722) C:/altera_projects/usbfunc/Block1.v(177): [TFMPC] - Missing connection for port 'rdata'.
+# 
+# ** Warning: (vsim-3722) C:/altera_projects/usbfunc/Block1.v(177): [TFMPC] - Missing connection for port 'rdata_ready'.
+# 
+# ** Warning: (vsim-3722) C:/altera_projects/usbfunc/Block1.v(177): [TFMPC] - Missing connection for port 'rbyte_cnt'.
+# 
+# ** Warning: (vsim-3722) C:/altera_projects/usbfunc/Block1.v(177): [TFMPC] - Missing connection for port 'SOP'.
+# 
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+vlog -reportprogress 300 -work work C:/altera_projects/usbfunc/simulation/modelsim/Block1.vt
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Block1_vlg_tst
+# 
+# Top level modules:
+# 	Block1_vlg_tst
+restart -f
+# Loading work.Block1_vlg_tst
+# ** Warning: (vsim-3017) C:/altera_projects/usbfunc/Block1.v(125): [TFMPC] - Too few port connections. Expected 17, found 16.
+# 
+#         Region: /Block1_vlg_tst/i1/b2v_inst2
+# ** Warning: (vsim-3722) C:/altera_projects/usbfunc/Block1.v(125): [TFMPC] - Missing connection for port 'SETUP_token'.
+# 
+# ** Warning: (vsim-3017) C:/altera_projects/usbfunc/Block1.v(177): [TFMPC] - Too few port connections. Expected 15, found 11.
+# 
+#         Region: /Block1_vlg_tst/i1/b2v_inst7
+# ** Warning: (vsim-3722) C:/altera_projects/usbfunc/Block1.v(177): [TFMPC] - Missing connection for port 'rdata'.
+# 
+# ** Warning: (vsim-3722) C:/altera_projects/usbfunc/Block1.v(177): [TFMPC] - Missing connection for port 'rdata_ready'.
+# 
+# ** Warning: (vsim-3722) C:/altera_projects/usbfunc/Block1.v(177): [TFMPC] - Missing connection for port 'rbyte_cnt'.
+# 
+# ** Warning: (vsim-3722) C:/altera_projects/usbfunc/Block1.v(177): [TFMPC] - Missing connection for port 'SOP'.
+# 
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+# Load canceled
+vlog -reportprogress 300 -work work C:/altera_projects/usbfunc/simulation/modelsim/Block1.vt
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Block1_vlg_tst
+# 
+# Top level modules:
+# 	Block1_vlg_tst
+restart -f
+# Loading work.Block1_vlg_tst
+# ** Warning: (vsim-3017) C:/altera_projects/usbfunc/Block1.v(125): [TFMPC] - Too few port connections. Expected 17, found 16.
+# 
+#         Region: /Block1_vlg_tst/i1/b2v_inst2
+# ** Warning: (vsim-3722) C:/altera_projects/usbfunc/Block1.v(125): [TFMPC] - Missing connection for port 'SETUP_token'.
+# 
+# ** Warning: (vsim-3017) C:/altera_projects/usbfunc/Block1.v(177): [TFMPC] - Too few port connections. Expected 15, found 11.
+# 
+#         Region: /Block1_vlg_tst/i1/b2v_inst7
+# ** Warning: (vsim-3722) C:/altera_projects/usbfunc/Block1.v(177): [TFMPC] - Missing connection for port 'rdata'.
+# 
+# ** Warning: (vsim-3722) C:/altera_projects/usbfunc/Block1.v(177): [TFMPC] - Missing connection for port 'rdata_ready'.
+# 
+# ** Warning: (vsim-3722) C:/altera_projects/usbfunc/Block1.v(177): [TFMPC] - Missing connection for port 'rbyte_cnt'.
+# 
+# ** Warning: (vsim-3722) C:/altera_projects/usbfunc/Block1.v(177): [TFMPC] - Missing connection for port 'SOP'.
+# 
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+vlog -reportprogress 300 -work work C:/altera_projects/usbfunc/simulation/modelsim/Block1.vt
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Block1_vlg_tst
+# 
+# Top level modules:
+# 	Block1_vlg_tst
+restart -f
+# Loading work.Block1_vlg_tst
+# ** Warning: (vsim-3017) C:/altera_projects/usbfunc/Block1.v(125): [TFMPC] - Too few port connections. Expected 17, found 16.
+# 
+#         Region: /Block1_vlg_tst/i1/b2v_inst2
+# ** Warning: (vsim-3722) C:/altera_projects/usbfunc/Block1.v(125): [TFMPC] - Missing connection for port 'SETUP_token'.
+# 
+# ** Warning: (vsim-3017) C:/altera_projects/usbfunc/Block1.v(177): [TFMPC] - Too few port connections. Expected 15, found 11.
+# 
+#         Region: /Block1_vlg_tst/i1/b2v_inst7
+# ** Warning: (vsim-3722) C:/altera_projects/usbfunc/Block1.v(177): [TFMPC] - Missing connection for port 'rdata'.
+# 
+# ** Warning: (vsim-3722) C:/altera_projects/usbfunc/Block1.v(177): [TFMPC] - Missing connection for port 'rdata_ready'.
+# 
+# ** Warning: (vsim-3722) C:/altera_projects/usbfunc/Block1.v(177): [TFMPC] - Missing connection for port 'rbyte_cnt'.
+# 
+# ** Warning: (vsim-3722) C:/altera_projects/usbfunc/Block1.v(177): [TFMPC] - Missing connection for port 'SOP'.
+# 
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+vlog -reportprogress 300 -work work C:/altera_projects/usbfunc/simulation/modelsim/Block1.vt
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Block1_vlg_tst
+# 
+# Top level modules:
+# 	Block1_vlg_tst
+restart -f
+# Loading work.Block1_vlg_tst
+# ** Warning: (vsim-3017) C:/altera_projects/usbfunc/Block1.v(125): [TFMPC] - Too few port connections. Expected 17, found 16.
+# 
+#         Region: /Block1_vlg_tst/i1/b2v_inst2
+# ** Warning: (vsim-3722) C:/altera_projects/usbfunc/Block1.v(125): [TFMPC] - Missing connection for port 'SETUP_token'.
+# 
+# ** Warning: (vsim-3017) C:/altera_projects/usbfunc/Block1.v(177): [TFMPC] - Too few port connections. Expected 15, found 11.
+# 
+#         Region: /Block1_vlg_tst/i1/b2v_inst7
+# ** Warning: (vsim-3722) C:/altera_projects/usbfunc/Block1.v(177): [TFMPC] - Missing connection for port 'rdata'.
+# 
+# ** Warning: (vsim-3722) C:/altera_projects/usbfunc/Block1.v(177): [TFMPC] - Missing connection for port 'rdata_ready'.
+# 
+# ** Warning: (vsim-3722) C:/altera_projects/usbfunc/Block1.v(177): [TFMPC] - Missing connection for port 'rbyte_cnt'.
+# 
+# ** Warning: (vsim-3722) C:/altera_projects/usbfunc/Block1.v(177): [TFMPC] - Missing connection for port 'SOP'.
+# 
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+vlog -reportprogress 300 -work work C:/altera_projects/usbfunc/simulation/modelsim/Block1.vt
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Block1_vlg_tst
+# 
+# Top level modules:
+# 	Block1_vlg_tst
+restart -f
+# Loading work.Block1_vlg_tst
+# ** Warning: (vsim-3017) C:/altera_projects/usbfunc/Block1.v(125): [TFMPC] - Too few port connections. Expected 17, found 16.
+# 
+#         Region: /Block1_vlg_tst/i1/b2v_inst2
+# ** Warning: (vsim-3722) C:/altera_projects/usbfunc/Block1.v(125): [TFMPC] - Missing connection for port 'SETUP_token'.
+# 
+# ** Warning: (vsim-3017) C:/altera_projects/usbfunc/Block1.v(177): [TFMPC] - Too few port connections. Expected 15, found 11.
+# 
+#         Region: /Block1_vlg_tst/i1/b2v_inst7
+# ** Warning: (vsim-3722) C:/altera_projects/usbfunc/Block1.v(177): [TFMPC] - Missing connection for port 'rdata'.
+# 
+# ** Warning: (vsim-3722) C:/altera_projects/usbfunc/Block1.v(177): [TFMPC] - Missing connection for port 'rdata_ready'.
+# 
+# ** Warning: (vsim-3722) C:/altera_projects/usbfunc/Block1.v(177): [TFMPC] - Missing connection for port 'rbyte_cnt'.
+# 
+# ** Warning: (vsim-3722) C:/altera_projects/usbfunc/Block1.v(177): [TFMPC] - Missing connection for port 'SOP'.
+# 
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+vlog -reportprogress 300 -work work C:/altera_projects/usbfunc/simulation/modelsim/Block1.vt
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Block1_vlg_tst
+# 
+# Top level modules:
+# 	Block1_vlg_tst
+restart -f
+# Loading work.Block1_vlg_tst
+# ** Warning: (vsim-3017) C:/altera_projects/usbfunc/Block1.v(125): [TFMPC] - Too few port connections. Expected 17, found 16.
+# 
+#         Region: /Block1_vlg_tst/i1/b2v_inst2
+# ** Warning: (vsim-3722) C:/altera_projects/usbfunc/Block1.v(125): [TFMPC] - Missing connection for port 'SETUP_token'.
+# 
+# ** Warning: (vsim-3017) C:/altera_projects/usbfunc/Block1.v(177): [TFMPC] - Too few port connections. Expected 15, found 11.
+# 
+#         Region: /Block1_vlg_tst/i1/b2v_inst7
+# ** Warning: (vsim-3722) C:/altera_projects/usbfunc/Block1.v(177): [TFMPC] - Missing connection for port 'rdata'.
+# 
+# ** Warning: (vsim-3722) C:/altera_projects/usbfunc/Block1.v(177): [TFMPC] - Missing connection for port 'rdata_ready'.
+# 
+# ** Warning: (vsim-3722) C:/altera_projects/usbfunc/Block1.v(177): [TFMPC] - Missing connection for port 'rbyte_cnt'.
+# 
+# ** Warning: (vsim-3722) C:/altera_projects/usbfunc/Block1.v(177): [TFMPC] - Missing connection for port 'SOP'.
+# 
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+vlog -reportprogress 300 -work work C:/altera_projects/usbfunc/simulation/modelsim/Block1.vt
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Block1_vlg_tst
+# 
+# Top level modules:
+# 	Block1_vlg_tst
+restart -f
+# Loading work.Block1_vlg_tst
+# ** Warning: (vsim-3017) C:/altera_projects/usbfunc/Block1.v(125): [TFMPC] - Too few port connections. Expected 17, found 16.
+# 
+#         Region: /Block1_vlg_tst/i1/b2v_inst2
+# ** Warning: (vsim-3722) C:/altera_projects/usbfunc/Block1.v(125): [TFMPC] - Missing connection for port 'SETUP_token'.
+# 
+# ** Warning: (vsim-3017) C:/altera_projects/usbfunc/Block1.v(177): [TFMPC] - Too few port connections. Expected 15, found 11.
+# 
+#         Region: /Block1_vlg_tst/i1/b2v_inst7
+# ** Warning: (vsim-3722) C:/altera_projects/usbfunc/Block1.v(177): [TFMPC] - Missing connection for port 'rdata'.
+# 
+# ** Warning: (vsim-3722) C:/altera_projects/usbfunc/Block1.v(177): [TFMPC] - Missing connection for port 'rdata_ready'.
+# 
+# ** Warning: (vsim-3722) C:/altera_projects/usbfunc/Block1.v(177): [TFMPC] - Missing connection for port 'rbyte_cnt'.
+# 
+# ** Warning: (vsim-3722) C:/altera_projects/usbfunc/Block1.v(177): [TFMPC] - Missing connection for port 'SOP'.
+# 
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+vlog -reportprogress 300 -work work C:/altera_projects/usbfunc/simulation/modelsim/Block1.vt
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Block1_vlg_tst
+# 
+# Top level modules:
+# 	Block1_vlg_tst
+vlog -reportprogress 300 -work work C:/altera_projects/usbfunc/simulation/modelsim/Block1.vt
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Block1_vlg_tst
+# 
+# Top level modules:
+# 	Block1_vlg_tst
+restart -f
+# Loading work.Block1_vlg_tst
+# ** Warning: (vsim-3017) C:/altera_projects/usbfunc/Block1.v(125): [TFMPC] - Too few port connections. Expected 17, found 16.
+# 
+#         Region: /Block1_vlg_tst/i1/b2v_inst2
+# ** Warning: (vsim-3722) C:/altera_projects/usbfunc/Block1.v(125): [TFMPC] - Missing connection for port 'SETUP_token'.
+# 
+# ** Warning: (vsim-3017) C:/altera_projects/usbfunc/Block1.v(177): [TFMPC] - Too few port connections. Expected 15, found 11.
+# 
+#         Region: /Block1_vlg_tst/i1/b2v_inst7
+# ** Warning: (vsim-3722) C:/altera_projects/usbfunc/Block1.v(177): [TFMPC] - Missing connection for port 'rdata'.
+# 
+# ** Warning: (vsim-3722) C:/altera_projects/usbfunc/Block1.v(177): [TFMPC] - Missing connection for port 'rdata_ready'.
+# 
+# ** Warning: (vsim-3722) C:/altera_projects/usbfunc/Block1.v(177): [TFMPC] - Missing connection for port 'rbyte_cnt'.
+# 
+# ** Warning: (vsim-3722) C:/altera_projects/usbfunc/Block1.v(177): [TFMPC] - Missing connection for port 'SOP'.
+# 
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+vlog -reportprogress 300 -work work C:/altera_projects/usbfunc/simulation/modelsim/Block1.vt
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Block1_vlg_tst
+# 
+# Top level modules:
+# 	Block1_vlg_tst
+vlog -reportprogress 300 -work work C:/altera_projects/usbfunc/simulation/modelsim/Block1.vt
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Block1_vlg_tst
+# 
+# Top level modules:
+# 	Block1_vlg_tst
+# internal error on MenuItemCan 
+# m is .mBar.file label is End Simulation state is disabled 
+#  Trace back:  
+#    <5: ::Vsimmenu::MenuItemCan .mBar.file {End Simulation} disabled 
+#    >4: ::.main_pane.wave.interior.cs.body.pw.wf.tree Action .main_pane.wave SetMenuState {{can_open {::Vsimmenu::MenuItemCan .mBar.file Open...}} {can_close_file {::Vsimmenu::MenuItemCan .mBar.file {End Simulation}}} {can_save {::Vsimmenu::MenuItemCan .mBar.file {Save Dataset...}}} {can_saveas {::Vsimmenu::MenuItemCan .mBar.file {Save List...}}} {can_report {::Vsimmenu::MenuItemCan .mBar.file Report...}} {can_use_source_file {::Vsimmenu::MenuItemCan .mBar.file {Use Source...}}} {can_environment {::Vsimmenu::MenuItemCan .mBar.file Environment}} {can_page_setup {::Vsimmenu::MenuItemCan .mBar.file {Page Setup...}}} {can_print {::Vsimmenu::MenuItemCan .mBar.file Print...}} {can_print_postscript {::Vsimmenu::MenuItemCan .mBar.file {Print Postscript...}}} {can_close_window {::Vsimmenu::MenuItemCan .mBar.file {Close Window}}}} 
+#    <3: ::Wave <trace variable?>  
+#    >2: ::.vcop Action SetMenuState {{can_open {::Vsimmenu::MenuItemCan .mBar.file Open...}} {can_close_file {::Vsimmenu::MenuItemCan .mBar.file {End Simulation}}} {can_save {::Vsimmenu::MenuItemCan .mBar.file {Save Dataset...}}} {can_saveas {::Vsimmenu::MenuItemCan .mBar.file {Save List...}}} {can_report {::Vsimmenu::MenuItemCan .mBar.file Report...}} {can_use_source_file {::Vsimmenu::MenuItemCan .mBar.file {Use Source...}}} {can_environment {::Vsimmenu::MenuItemCan .mBar.file Environment}} {can_page_setup {::Vsimmenu::MenuItemCan .mBar.file {Page Setup...}}} {can_print {::Vsimmenu::MenuItemCan .mBar.file Print...}} {can_print_postscript {::Vsimmenu::MenuItemCan .mBar.file {Print Postscript...}}} {can_close_window {::Vsimmenu::MenuItemCan .mBar.file {Close Window}}}} 
+#    <1: ::Vsimmenu::DefaultMenuPostCmd .mBar.file {FileMenuPostCmd .mBar.file} SetMenuState 
+restart -f
+# Loading work.Block1_vlg_tst
+# ** Warning: (vsim-3017) C:/altera_projects/usbfunc/Block1.v(125): [TFMPC] - Too few port connections. Expected 17, found 16.
+# 
+#         Region: /Block1_vlg_tst/i1/b2v_inst2
+# ** Warning: (vsim-3722) C:/altera_projects/usbfunc/Block1.v(125): [TFMPC] - Missing connection for port 'SETUP_token'.
+# 
+# ** Warning: (vsim-3017) C:/altera_projects/usbfunc/Block1.v(177): [TFMPC] - Too few port connections. Expected 15, found 11.
+# 
+#         Region: /Block1_vlg_tst/i1/b2v_inst7
+# ** Warning: (vsim-3722) C:/altera_projects/usbfunc/Block1.v(177): [TFMPC] - Missing connection for port 'rdata'.
+# 
+# ** Warning: (vsim-3722) C:/altera_projects/usbfunc/Block1.v(177): [TFMPC] - Missing connection for port 'rdata_ready'.
+# 
+# ** Warning: (vsim-3722) C:/altera_projects/usbfunc/Block1.v(177): [TFMPC] - Missing connection for port 'rbyte_cnt'.
+# 
+# ** Warning: (vsim-3722) C:/altera_projects/usbfunc/Block1.v(177): [TFMPC] - Missing connection for port 'SOP'.
+# 
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+vlog -reportprogress 300 -work work C:/altera_projects/usbfunc/simulation/modelsim/Block1.vt
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Block1_vlg_tst
+# 
+# Top level modules:
+# 	Block1_vlg_tst
+restart -f
+# Loading work.Block1_vlg_tst
+# ** Warning: (vsim-3017) C:/altera_projects/usbfunc/Block1.v(125): [TFMPC] - Too few port connections. Expected 17, found 16.
+# 
+#         Region: /Block1_vlg_tst/i1/b2v_inst2
+# ** Warning: (vsim-3722) C:/altera_projects/usbfunc/Block1.v(125): [TFMPC] - Missing connection for port 'SETUP_token'.
+# 
+# ** Warning: (vsim-3017) C:/altera_projects/usbfunc/Block1.v(177): [TFMPC] - Too few port connections. Expected 15, found 11.
+# 
+#         Region: /Block1_vlg_tst/i1/b2v_inst7
+# ** Warning: (vsim-3722) C:/altera_projects/usbfunc/Block1.v(177): [TFMPC] - Missing connection for port 'rdata'.
+# 
+# ** Warning: (vsim-3722) C:/altera_projects/usbfunc/Block1.v(177): [TFMPC] - Missing connection for port 'rdata_ready'.
+# 
+# ** Warning: (vsim-3722) C:/altera_projects/usbfunc/Block1.v(177): [TFMPC] - Missing connection for port 'rbyte_cnt'.
+# 
+# ** Warning: (vsim-3722) C:/altera_projects/usbfunc/Block1.v(177): [TFMPC] - Missing connection for port 'SOP'.
+# 
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+vlog -reportprogress 300 -work work C:/altera_projects/usbfunc/simulation/modelsim/Block1.vt
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Block1_vlg_tst
+# 
+# Top level modules:
+# 	Block1_vlg_tst
+restart -f
+# Loading work.Block1_vlg_tst
+# ** Warning: (vsim-3017) C:/altera_projects/usbfunc/Block1.v(125): [TFMPC] - Too few port connections. Expected 17, found 16.
+# 
+#         Region: /Block1_vlg_tst/i1/b2v_inst2
+# ** Warning: (vsim-3722) C:/altera_projects/usbfunc/Block1.v(125): [TFMPC] - Missing connection for port 'SETUP_token'.
+# 
+# ** Warning: (vsim-3017) C:/altera_projects/usbfunc/Block1.v(177): [TFMPC] - Too few port connections. Expected 15, found 11.
+# 
+#         Region: /Block1_vlg_tst/i1/b2v_inst7
+# ** Warning: (vsim-3722) C:/altera_projects/usbfunc/Block1.v(177): [TFMPC] - Missing connection for port 'rdata'.
+# 
+# ** Warning: (vsim-3722) C:/altera_projects/usbfunc/Block1.v(177): [TFMPC] - Missing connection for port 'rdata_ready'.
+# 
+# ** Warning: (vsim-3722) C:/altera_projects/usbfunc/Block1.v(177): [TFMPC] - Missing connection for port 'rbyte_cnt'.
+# 
+# ** Warning: (vsim-3722) C:/altera_projects/usbfunc/Block1.v(177): [TFMPC] - Missing connection for port 'SOP'.
+# 
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run

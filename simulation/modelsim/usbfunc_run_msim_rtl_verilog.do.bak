@@ -1,0 +1,14 @@
+transcript on
+if {[file exists rtl_work]} {
+	vdel -lib rtl_work -all
+}
+vlib rtl_work
+vmap work rtl_work
+
+vlog -vlog01compat -work work +incdir+C:/altera_projects/usbfunc {C:/altera_projects/usbfunc/ls_usb_send.v}
+vlog -vlog01compat -work work +incdir+C:/altera_projects/usbfunc {C:/altera_projects/usbfunc/ls_usb_recv.v}
+vlog -vlog01compat -work work +incdir+C:/altera_projects/usbfunc {C:/altera_projects/usbfunc/ls_usb_core.v}
+vlog -vlog01compat -work work +incdir+C:/altera_projects/usbfunc {C:/altera_projects/usbfunc/altpll0.v}
+vlog -vlog01compat -work work +incdir+C:/altera_projects/usbfunc/db {C:/altera_projects/usbfunc/db/altiobuf0.v}
+vlog -vlog01compat -work work +incdir+C:/altera_projects/usbfunc {C:/altera_projects/usbfunc/uart_cntlr.v}
+

@@ -1,0 +1,11 @@
+module uart_controller(
+input uart_clk,
+input [7:0] uart_tx_byte,
+output reg [7:0] uart_rx_byte,
+output uart_tx,
+input uart_rx
+);
+
+
+
+endmodule

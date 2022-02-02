@@ -1,0 +1,207 @@
+// Copyright (C) 1991-2013 Altera Corporation
+// Your use of Altera Corporation's design tools, logic functions 
+// and other software and tools, and its AMPP partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Altera Program License 
+// Subscription Agreement, Altera MegaCore Function License 
+// Agreement, or other applicable license agreement, including, 
+// without limitation, that your use is for the sole purpose of 
+// programming logic devices manufactured by Altera and sold by 
+// Altera or its authorized distributors.  Please refer to the 
+// applicable agreement for further details.
+
+// *****************************************************************************
+// This file contains a Verilog test bench template that is freely editable to  
+// suit user's needs .Comments are provided in each section to help the user    
+// fill out necessary details.                                                  
+// *****************************************************************************
+// Generated on "12/18/2017 00:21:13"
+                                                                                
+// Verilog Test Bench template for design : Block1
+// 
+// Simulation tool : ModelSim-Altera (Verilog)
+// 
+
+`timescale 1 ns/ 1 ns
+module Block1_vlg_tst();
+// constants                                           
+// general purpose registers
+reg eachvec;
+// test vector input registers
+reg RX_COM1;
+reg RX_COM2;
+reg treg_dm_inout;
+reg treg_dp_inout;
+reg uart_clk;
+reg usb_clk;
+// wires                                               
+wire TX_COM1;
+wire TX_COM2;
+wire TX_COM_LED1;
+wire TX_COM_LED2;
+wire d_out_enable;
+wire dm_inout;
+wire dp_inout;
+wire tx_clk;
+
+// assign statements (if any)                          
+assign dm_inout = treg_dm_inout;
+assign dp_inout = treg_dp_inout;
+Block1 i1 (
+// port map - connection between master ports and signals/registers   
+	.RX_COM1(RX_COM1),
+	.RX_COM2(RX_COM2),
+	.TX_COM1(TX_COM1),
+	.TX_COM2(TX_COM2),
+	.TX_COM_LED1(TX_COM_LED1),
+	.TX_COM_LED2(TX_COM_LED2),
+	.d_out_enable(d_out_enable),
+	.dm_inout(dm_inout),
+	.dp_inout(dp_inout),
+	.tx_clk(tx_clk),
+	.uart_clk(uart_clk),
+	.usb_clk(usb_clk)
+);
+always
+	#41.667 usb_clk = ~usb_clk;
+//переменная содержит количество единиц переданных подряд по шине USB
+integer ones_cnt;
+
+initial                                                
+begin                                                  
+// code that executes only once                        
+// insert code here --> begin                          
+    //значения сигналов в начальный момент времени
+    //reset = 1; //сигнал сброса активен
+    //inclk = 0;
+	 usb_clk = 0;
+	 uart_clk = 0;
+    ///enable = 0;
+    ones_cnt = 0;
+    treg_dp_inout = 0;
+    treg_dm_inout = 0;
+#500
+    //пауза 200 наносекунд
+/*        #200     
+treg_dp_inout = 0;
+    treg_dm_inout = 1;
+	 #200 
+treg_dp_inout = 0;
+    treg_dm_inout = 0;
+	 #500 
+	 treg_dp_inout = 0;
+    treg_dm_inout = 1;
+	 #500 */
+/*	 #200  
+treg_dp_inout = 0;
+    treg_dm_inout = 1;
+	 #200*/
+	// treg_dp_inout = 0;
+   // treg_dm_inout = 0;
+	 //ones_cnt = 0;
+//send_ls_se0;	
+ones_cnt = 0;
+//ls_pause(2);	
+    treg_dp_inout = 0;
+    treg_dm_inout = 1;
+//ls_pause(2);
+#200
+    treg_dp_inout = 0;
+    treg_dm_inout = 0;
+#200
+//ls_pause(2);
+    send_ls_byte(8'h80); //SYN
+    send_ls_byte(8'h2D); //PID SETUP
+    send_ls_byte(8'h01); //Addr and CRC5
+    send_ls_byte(8'hE8);
+   // treg_dp_inout = 0;
+   // treg_dm_inout = 0;
+	 //ones_cnt = 0;     //конец пакета
+
+    //пауза длинной 2 бита при низкоскоростной передаче (1,5Мгц)  
+   //#200
+
+    //хост контроллер передает второй USB пакет DATA0
+    send_ls_byte(8'h80); //SYN
+    send_ls_byte(8'hC3); //PID DATA0
+    send_ls_byte(8'h80); //Data 8 bytes
+    send_ls_byte(8'h06);
+    send_ls_byte(8'h00);
+    send_ls_byte(8'h02);
+    send_ls_byte(8'h00);
+    send_ls_byte(8'h00);
+    send_ls_byte(8'hFF);
+    send_ls_byte(8'h00);
+    send_ls_byte(8'hE9); //CRC16
+    send_ls_byte(8'hA4);
+	 ones_cnt = 0;
+#200			
+    treg_dp_inout = 0;
+    treg_dm_inout = 1;  
+#200 
+// --> end                                             
+$display("Running testbench");                       
+end   
+
+task send_ls_se0;
+ begin
+   // @(posedge usb_clk);
+   // #0;
+    repeat(16) @(posedge usb_clk);
+    #0;
+ end
+endtask
+
+task ls_pause(input integer num_bits);
+ begin
+    repeat(8 * num_bits) @(posedge usb_clk);
+    #0;
+ end
+endtask
+
+task send_ls_byte(input [7:0]sbyte);
+integer i;
+ begin
+   //в цикле передаем бит за битом (младшие вперед)
+   for(i=0; i<8; i=i+1)
+   begin
+    //в шине USB бит "0" кодируется сменой сигналов dp и dm на противоположные 
+    if(sbyte[i]==0)
+    begin
+        treg_dp_inout = ~treg_dp_inout;
+        treg_dm_inout = ~treg_dm_inout;
+        ones_cnt = 0;
+    end
+    else
+    begin
+        //запоминаем количество переданных подряд единиц
+        ones_cnt = ones_cnt+1;
+    end
+    ls_pause(1);
+
+    //если передано подряд 6 единиц, то искуственно вставляем бит "0" 
+    if(ones_cnt==6)
+    begin
+        treg_dp_inout = ~treg_dp_inout;
+        treg_dm_inout = ~treg_dm_inout;
+        ones_cnt = 0;
+        ls_pause(1);
+    end
+   end
+ end
+endtask
+                                                 
+always                                                 
+// optional sensitivity list                           
+// @(event1 or event2 or .... eventn)                  
+begin                                                  
+// code executes for every event on sensitivity list   
+// insert code here --> begin                          
+                                                       
+@eachvec;                                              
+// --> end                                             
+end                                                    
+endmodule
+
